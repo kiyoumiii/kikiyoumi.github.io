@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="author" content="kiyoumiii"/><meta name="description" content="kiyoumiii's blog"/><meta name="keyword"/><title>前端基础--HTTP基本概念 - MEOW - kiyoumi's blog</title><link rel="shortcut icon" href="/img/site-icon.png">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+<meta name="generator" content="Hexo 7.3.0"></head><body><header><div class="top-nav" ondblclick="scrollToTop()"><div class="nav-info"><div class="nav-icon"><img id="nav-icon" src="/img/site-icon.png"/></div><div class="nav-title"><a id="nav-title" href="/" title="主页">Hexo</a></div></div><div class="nav-ribbon"><div class="top-menu-expanded"><a class="top-menu-item" href="/archives"><span>归档</span></a><a class="top-menu-item" href="/categories"><span>分类</span></a><a class="top-menu-item" href="/tags"><span>标签</span></a><a class="top-menu-item" href="/about"><span>关于</span></a></div><div class="top-search" onclick="toggleSearchWindow()"><div id="top-search-btn" title="搜索"><i class="icon fa-solid fa-magnifying-glass"></i><span>搜索</span></div></div><div id="top-menu-btn" onclick="openTopMenu()" title="打开菜单"><i class="fa-solid fa-bars fa-lg"></i></div></div></div></header><div id="top-menu-hidden"><div class="menu-hidden-content"><div class="menu-hidden-nav"><a class="menu-hidden-item" href="/archives"><i class="fa-solid fa-box-archive fa-sm"></i><span>归档</span></a><a class="menu-hidden-item" href="/categories"><i class="fa-regular fa-folder-open fa-sm"></i><span>分类</span></a><a class="menu-hidden-item" href="/tags"><i class="fa-solid fa-tags fa-sm"></i><span>标签</span></a><a class="menu-hidden-item" href="/about"><i class="fa-solid fa-paw fa-sm"></i><span>关于</span></a></div></div><div class="menu-hidden-blank" onclick="closeTopMenu()"></div></div>
+<div class="blog-info"><div class="blog-pic"><img id="blog-pic" src="/img/site-icon.png"/></div><div class="blog-title"><i class="fa-solid fa-paw fa-2xs fa-rotate-by"></i><span>MEOW</span><i class="fa-solid fa-paw fa-2xs fa-rotate-by"></i></div><div class="blog-desc">个人小站，记录学习点滴，欢迎访问~</div></div><div class="main"><div class="main-content"><article class="post"><div class="post-title"><h1><i class="fa-solid fa-paw"></i>前端基础--HTTP基本概念</h1></div><div class="post-info"><div class="post-info-first-line"><div class="post-date"><i class="icon fa-regular fa-calendar-plus" title="发布日期"></i><time class="publish-time">2024-07-29</time><i class="icon fa-regular fa-calendar-check" title="更新日期"></i><time class="update-time">2024-07-29</time></div>
+
+</div><div class="post-info-second-line"><div class="post-copyright"><i class="icon fa-brands fa-creative-commons" title="版权声明"></i><span>版权声明: </span><a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans" title="CC BY-NC-ND 4.0">署名-非商业性使用-禁止演绎 4.0</a></div>
+<div class="post-word-count"><i class="icon fa-solid fa-pen-to-square"></i><span>全文约1343字</span></div><div class="pageview-post"><i class="icon fa-regular fa-eye"></i><span id="busuanzi_container_page_pv">本文阅读次数: <span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner"></i></span></span></div></div></div><div class="post-content"><h1 id="HTTP常见面试题"><a href="#HTTP常见面试题" class="headerlink" title="HTTP常见面试题"></a>HTTP常见面试题</h1><h2 id="HTTP基本概念"><a href="#HTTP基本概念" class="headerlink" title="HTTP基本概念"></a>HTTP基本概念</h2><ol>
+<li>HTTP 是什么？描述一下</li>
+</ol>
+<ul>
+<li>HTTP 是超文本传输协议，也就是HyperText Transfer Protocol。</li>
+</ul>
+<ol start="2">
+<li>能否详细解释「超文本传输协议」？</li>
+</ol>
+<ul>
+<li>HTTP的名字「超文本协议传输」，HTTP 是一个在计算机世界里专门在「两点」之间「传输」文字、图片、音频、视频等「超文本」数据的「约定和规范」。</li>
+</ul>
+<ol start="3">
+<li>那「HTTP 是用于从互联网服务器传输超文本到本地浏览器的协议HTTP」 ，这种说法正确吗？</li>
+</ol>
+<ul>
+<li>这种说法是不正确的。因为也可以是「服务器&lt; – &gt;服务器」，所以采用两点之间的描述会更准确。</li>
+</ul>
+<ol start="4">
+<li>HTTP 常见的状态码，有哪些？</li>
+</ol>
+<ul>
+<li>1xx,2xx,3xx,4xx,5xx</li>
+</ul>
+<div align=center>
+    <img src="https://api2.mubu.com/v3/document_image/28295742-106c-437f-89ae-2a75c243ad8b-3807603.jpg">
+</div>
+
+<ul>
+<li><p>1xx 类状态码属于提示信息，是协议处理中的一种中间状态，实际用到的比较少。</p>
+</li>
+<li><p>2xx 类状态码表示服务器成功处理了客户端的请求，也是我们最愿意看到的状态。<br><br>「200 OK」是最常见的成功状态码，表示一切正常。如果是非 HEAD 请求，服务器返回的响应头都会有 body 数据。<br><br>「204 No Content」也是常见的成功状态码，与 200 OK 基本相同，但响应头没有 body 数据。<br><br>「206 Partial Content」是应用于 HTTP 分块下载或断电续传，表示响应返回的 body 数据并不是资源的全部，而是其中的一部分，也是服务器处理成功的状态。</p>
+</li>
+<li><p>3xx 类状态码表示客户端请求的资源发送了变动，需要客户端用新的 URL 重新发送请求获取资源，也就是重定向。<br><br>「301 Moved Permanently」表示永久重定向，说明请求的资源已经不存在了，需改用新的 URL 再次访问。<br><br>「302 Moved Permanently」表示临时重定向，说明请求的资源还在，但暂时需要用另一个 URL 来访问。<br><br>301 和 302 都会在响应头里使用字段 Location，指明后续要跳转的 URL，浏览器会自动重定向新的 URL。<br><br>「304 Not Modified」不具有跳转的含义，表示资源未修改，重定向已存在的缓冲文件，也称缓存重定向，用于缓存控制。</p>
+</li>
+<li><p>4xx 类状态码表示客户端发送的报文有误，服务器无法处理，也就是错误码的含义。<br><br>「400 Bad Request」表示客户端请求的报文有错误，但只是个笼统的错误。<br><br>「403 Forbidden」表示服务器禁止访问资源，并不是客户端的请求出错。<br><br>「404 Not Found」表示请求的资源在服务器上不存在或未找到，所以无法提供给客户端。</p>
+</li>
+<li><p>5xx 类状态码表示客户端请求报文正确，但是服务器处理时内部发生了错误，属于服务器端的错误码。<br><br> 「500 Internal Server Error」与 400 类型，是个笼统通用的错误码，服务器发生了什么错误，我们并不知道。<br><br>「501 Not Implemented」表示客户端请求的功能还不支持，类似“即将开业，敬请期待”的意思。<br><br>「502 Bad Gateway」通常是服务器作为网关或代理时返回的错误码，表示服务器自身工作正常，访问后端服务器发生了错误。<br><br>「503 Service Unavailable」表示服务器当前很忙，暂时无法响应服务器，类似“网络服务正忙，请稍后重试”的意思。</p>
+</li>
+</ul>
+<h2 id="http-常见字段有哪些？"><a href="#http-常见字段有哪些？" class="headerlink" title="http 常见字段有哪些？"></a>http 常见字段有哪些？</h2><ol>
+<li>Host</li>
+</ol>
+<ul>
+<li>客户端发送请求时，用来指定服务器的域名。</li>
+<li>Host: <a target="_blank" rel="noopener" href="http://www.a.com/">http://www.A.com</a></li>
+<li>有了 Host 字段，就可以将请求发往「同一台」服务器上的不同网站。<div align=center>
+  <img src="https://api2.mubu.com/v3/document_image/fb86d6fd-e6bd-41cf-aece-fed0037dcf81-3807603.jpg">
+</div>
+<br></li>
+</ul>
+<ol start="2">
+<li>Content-Length 字段</li>
+</ol>
+<ul>
+<li>服务器在返回数据时，会有 Content-Length 字段，表明本次回应的数据长度。</li>
+<li>Content-Length: 1000</li>
+<li>如上面则是告诉浏览器，本次服务器回应的数据长度是 1000 个字节，后面的字节就属于下一个回应了。<div align=center>
+  <img src="https://api2.mubu.com/v3/document_image/2ca4f141-26f2-48bf-a4e7-6e718db6b056-3807603.jpg">
+</div>
+<br></li>
+</ul>
+<ol start="3">
+<li>Connection 字段</li>
+</ol>
+<ul>
+<li>Connection 字段最常用于客户端要求服务器使用 TCP 持久连接，以便其他请求复用。</li>
+<li>HTTP&#x2F;1.1 版本的默认连接都是持久连接，但为了兼容老版本的 HTTP，需要指定 Connection 首部字段的值为 Keep-Alive。</li>
+<li>Connection: keep-alive</li>
+<li>一个可以复用的 TCP 连接就建立了，直到客户端或服务器主动关闭连接。但是，这不是标准字段。<div align=center>
+  <img src="https://api2.mubu.com/v3/document_image/e76e6254-5918-4759-a25e-6b0f33ca9968-3807603.jpg">
+</div>
+<br></li>
+</ul>
+<ol start="4">
+<li>Content-Type 字段</li>
+</ol>
+<ul>
+<li>Content-Type 字段用于服务器回应时，告诉客户端，本次数据是什么格式。</li>
+<li>Content-Type: text&#x2F;html; charset&#x3D;utf-8</li>
+<li>上面的类型表明，发送的是网页，而且编码是UTF-8。</li>
+<li>客户端请求的时候，可以使用 Accept 字段声明自己可以接受哪些数据格式。</li>
+<li>Accept: <em>&#x2F;</em></li>
+<li>上面代码中，客户端声明自己可以接受任何格式的数据。<div align=center>
+  <img src="https://api2.mubu.com/v3/document_image/70955d3f-0d65-4e0c-afe7-dbbdbcc4fe59-3807603.jpg">
+</div>
+<br></li>
+</ul>
+<ol start="5">
+<li>Content-Encoding 字段</li>
+</ol>
+<ul>
+<li>Content-Encoding 字段说明数据的压缩方法。表示服务器返回的数据使用了什么压缩格式</li>
+<li>Content-Encoding: gzip</li>
+<li>下面表示服务器返回的数据采用了 gzip 方式压缩，告知客户端需要用此方式解压。</li>
+<li>客户端在请求时，用 Accept-Encoding 字段说明自己可以接受哪些压缩方法。</li>
+<li>Accept-Encoding: gzip, deflate<div align=center>
+  <img src="https://api2.mubu.com/v3/document_image/e55a7e13-db1f-4307-9b91-39c430d196cd-3807603.jpg">
+</div>
+<br></li>
+</ul>
+</div><div class="post-end"><div class="post-prev"></div><div class="post-reward" onclick="openPostReward()" title="赞赏"><i class="fa-regular fa-thumbs-up fa-xl fa-beat-fade"></i></div><div id="reward-panel" onclick="closePostReward()"><div class="reward-container"><p>很荣幸您喜欢这篇文章，欢迎再来，谢谢&#128151;</p>
+<div class="reward-nav"><div class="reward-item"><img class="reward-img" src="/img/reward/wechat.jpg" title="Wechat" alt="Wechat"/><span>Wechat</span></div><div class="reward-item"><img class="reward-img" src="/img/reward/alipay.jpg" title="Alipay" alt="Alipay"/><span>Alipay</span></div></div></div></div><div class="post-next"><a href="/2024/07/27/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/" title="下一篇文章"><i class="fa-solid fa-chevron-right fa-lg"></i></a></div></div></article><div id="post-toc"><aside class="toc-aside"><div class="toc-title"><span><i class="fa-solid fa-paw"></i>目录</span></div><div class="toc-container"><ol class="toc-content"><li class="toc-content-item toc-content-level-1"><a class="toc-content-link" href="#HTTP%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98"><span class="toc-content-number">1.</span> <span class="toc-content-text">HTTP常见面试题</span></a><ol class="toc-content-child"><li class="toc-content-item toc-content-level-2"><a class="toc-content-link" href="#HTTP%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-content-number">1.1.</span> <span class="toc-content-text">HTTP基本概念</span></a></li><li class="toc-content-item toc-content-level-2"><a class="toc-content-link" href="#http-%E5%B8%B8%E8%A7%81%E5%AD%97%E6%AE%B5%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-content-number">1.2.</span> <span class="toc-content-text">http 常见字段有哪些？</span></a></li></ol></li></ol></div></aside><div class="toc-blank" onclick="tocToggle()"></div></div></div></div><div id="tool-bar"><div id="tool-toggle" onclick="toolToggle()" title="设置"><i class="fa-solid fa-gear"></i></div><div id="toc-toggle" onclick="tocToggle()" title="目录"><i class="fa-solid fa-list-ul"></i></div><div id="back-to-top" onclick="scrollToTop()" title="返回顶部"><i class="fa-solid fa-chevron-up"></i></div></div><div id="search-panel"><div class="search-container"><div class="search-head"><div class="search-title"><span><i class="fa-solid fa-paw"></i>搜索</span></div><div class="search-close-btn" onclick="toggleSearchWindow()"><i class="fa-regular fa-circle-xmark"></i></div></div><div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="search-input" type="text" placeholder="请输入需要搜索的内容……" value=""/></div><div class="search-body"><div id="search-count">匹配结果数: </div><div id="search-result"></div><div id="search-result-empty">未搜索到匹配的文章。</div></div></div></div><footer><div class="footer-content"><div class="copyright-info"><i class="fa-regular fa-copyright fa-xs"></i><span>2024</span><a href="/about">kiyoumiii</a><i class="fa-solid fa-cat fa-sm"></i><span>Powered by</span><a href="https://hexo.io/" target="_blank">Hexo</a><span> &amp;</span><a href="https://github.com/chanwj/hexo-theme-meow" target="_blank" title="v1.0.0">Theme Meow</a></div><div class="pageview-site"><span id="busuanzi_container_site_pv">总访问量 : <span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner"></i></span></span><span id="busuanzi_container_site_uv">总访客数 : <span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner"></i></span></span></div></div></footer>
+
+<script src="/js/theme/tool-bar.js"></script>
+
+
+<script src="/js/theme/menu.js"></script>
+
+<script src="/js/theme/reward.js"></script>
+
+<script src="/js/jquery-3.7.1.min.js"></script>
+
+
+<script src="/js/theme/search.js"></script>
+<script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+  search_path = "search.xml";
+}
+var path = '/' + search_path;
+searchFunc(path, 'search-input', 'search-result');</script></body></html>
