@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="author" content="kiyoumiii"/><meta name="description" content="kiyoumiii's blog"/><meta name="keyword"/><title>大模型基础 - MEOW - kiyoumi's blog</title><link rel="shortcut icon" href="/img/site-icon.png">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+<meta name="generator" content="Hexo 7.3.0"></head><body><header><div class="top-nav" ondblclick="scrollToTop()"><div class="nav-info"><div class="nav-icon"><img id="nav-icon" src="/img/site-icon.png"/></div><div class="nav-title"><a id="nav-title" href="/" title="主页">Hexo</a></div></div><div class="nav-ribbon"><div class="top-menu-expanded"><a class="top-menu-item" href="/archives"><span>归档</span></a><a class="top-menu-item" href="/categories"><span>分类</span></a><a class="top-menu-item" href="/tags"><span>标签</span></a><a class="top-menu-item" href="/about"><span>关于</span></a></div><div class="top-search" onclick="toggleSearchWindow()"><div id="top-search-btn" title="搜索"><i class="icon fa-solid fa-magnifying-glass"></i><span>搜索</span></div></div><div id="top-menu-btn" onclick="openTopMenu()" title="打开菜单"><i class="fa-solid fa-bars fa-lg"></i></div></div></div></header><div id="top-menu-hidden"><div class="menu-hidden-content"><div class="menu-hidden-nav"><a class="menu-hidden-item" href="/archives"><i class="fa-solid fa-box-archive fa-sm"></i><span>归档</span></a><a class="menu-hidden-item" href="/categories"><i class="fa-regular fa-folder-open fa-sm"></i><span>分类</span></a><a class="menu-hidden-item" href="/tags"><i class="fa-solid fa-tags fa-sm"></i><span>标签</span></a><a class="menu-hidden-item" href="/about"><i class="fa-solid fa-paw fa-sm"></i><span>关于</span></a></div></div><div class="menu-hidden-blank" onclick="closeTopMenu()"></div></div>
+<div class="blog-info"><div class="blog-pic"><img id="blog-pic" src="/img/site-icon.png"/></div><div class="blog-title"><i class="fa-solid fa-paw fa-2xs fa-rotate-by"></i><span>MEOW</span><i class="fa-solid fa-paw fa-2xs fa-rotate-by"></i></div><div class="blog-desc">个人小站，记录学习点滴，欢迎访问~</div></div><div class="main"><div class="main-content"><article class="post"><div class="post-title"><h1><i class="fa-solid fa-paw"></i>大模型基础</h1></div><div class="post-info"><div class="post-info-first-line"><div class="post-date"><i class="icon fa-regular fa-calendar-plus" title="发布日期"></i><time class="publish-time">2024-07-29</time><i class="icon fa-regular fa-calendar-check" title="更新日期"></i><time class="update-time">2024-07-29</time></div>
+
+</div><div class="post-info-second-line"><div class="post-copyright"><i class="icon fa-brands fa-creative-commons" title="版权声明"></i><span>版权声明: </span><a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans" title="CC BY-NC-ND 4.0">署名-非商业性使用-禁止演绎 4.0</a></div>
+<div class="post-word-count"><i class="icon fa-solid fa-pen-to-square"></i><span>全文约2711字</span></div><div class="pageview-post"><i class="icon fa-regular fa-eye"></i><span id="busuanzi_container_page_pv">本文阅读次数: <span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner"></i></span></span></div></div></div><div class="post-content"><h1 id="Attention-is-all-you-need"><a href="#Attention-is-all-you-need" class="headerlink" title="Attention is all you need"></a>Attention is all you need</h1><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pu411o7BE/?spm_id_from=333.999.0.0&vd_source=27bfe73442d060c8d6150bb8b61d24a2">论文精讲</a></p>
+<h2 id="Transfomer架构"><a href="#Transfomer架构" class="headerlink" title="Transfomer架构"></a>Transfomer架构</h2><h3 id="原文片段"><a href="#原文片段" class="headerlink" title="原文片段"></a>原文片段</h3><p>“主流的序列转换模型都是基于复杂的循环神经网络或卷积神经网络，且都包含一个encoder和一个decoder。表现最好的模型还通过attention机制把encoder和decoder联接起来。而Transformer只基于单独的attention机制，完全避免使用循环和卷积。</p>
+<p>encoder将符号表示的输入序列( x 1 , . . . , x n ) 映射成一个连续表示的序列z &#x3D; ( z 1 , . . . , z n ) </p>
+<p>给定z ，解码器以一次生成一个字符的方式生成输出序列( y 1 , . . . , y m ) 。在每一步，模型都是自回归的。在生成下一个字符时，将先前生成的符号作为附加输入。</p>
+<p>Transformer遵循这个总体架构，使用堆叠的self-attention层、point-wise和全连接层，分别用于encoder和decoder。</p>
+<p>Encoder : encoder由N(N&#x3D;6)个完全相同的layer堆叠而成，每层有两个子层。第一层是multi-head self-attention机制，第二层是一个简单的、位置全连接的前馈神经网络。我们在两个子层的每一层后采用残差连接，接着进行layer normalization。</p>
+<p>Decoder : decoder也由N(N&#x3D;6)个完全相同的layer堆叠而成。除了每个编码器层中的两个子层之外，解码器还插入第三个子层，该子层对编码器堆栈的输出执行multi-head attention操作，与encoder相似，我们在每个子层的后面使用了残差连接，之后采用了layer normalization。”</p>
+<div align="center">
+    <img src="./img/transformer原版.png">
+</div>
+
+<h3 id="Transfomer开山之作"><a href="#Transfomer开山之作" class="headerlink" title="Transfomer开山之作"></a>Transfomer开山之作</h3><p>在Transformer提出以前，主流的NLP模型包括RNN、LSTM、GRU等，这些模型是有以下缺点：</p>
+<ul>
+<li>难以并行</li>
+<li>时序中过早的信息容易被丢弃</li>
+<li>内存开销大</li>
+</ul>
+<p>由于这些网络都是由前往后一步步计算的，当前的状态不仅依赖当前的输入，也依赖于前一个状态的输出。即对于网络中的第个t状态，与前t-1个状态都有关，使得网络必须一步一步计算；当较为重要的信息在较早的时序中进入网络时，多次传播过程中可能保留很少甚至被丢弃；从另一角度来考虑，即使重要的信息没有被丢弃，而是随着网络继续传递，那么势必会造成内存的冗余，导致开销过大。</p>
+<p>所以，作者团队因势利导，引出了本文纯attention、高并行、高效率的Transformer网络结构。</p>
+<p>Transformer这种神经网络架构，其独特之处在于完全基于注意力机制，摒弃了传统的循环和卷积操作。通过自注意力机制（self-attention），Transformer能够有效捕捉输入序列中的长距离依赖关系，使得模型在处理长文本时更为高效和准确。多头注意力机制（multi-head attention）则进一步增强了模型的表达能力，使其能够同时关注输入序列中的不同部分，捕捉更加复杂的语义关系。</p>
+<div align="center">
+    <img src="./img/transformer01.png">
+</div>
+
+<h3 id="layer-norm-而不是batch-norm"><a href="#layer-norm-而不是batch-norm" class="headerlink" title="layer norm 而不是batch norm"></a>layer norm 而不是batch norm</h3><p>当我们使用梯度下降法做优化时，随着网络深度的增加，输入数据的特征分布会不断发生变化，为了保证数据特征分布的稳定性，会加入Normalization。从而可以使用更大的学习率，从而加速模型的收敛速度。同时，Normalization也有一定的抗过拟合作用，使训练过程更加平稳。具体地，Normalization的主要作用就是把每层特征输入到激活函数之前，对它们进行normalization，使其转换为均值为0，方差为1的数据，从而可以避免数据落在激活函数的饱和区，以减少梯度消失的问题。</p>
+<p>BN（BatchNorm）和LN（LayerNorm）是两种最常用的Normalization的方法，它们都是将输入特征转换为均值为0，方差为1的数据，它们的形式是：<br><br></p>
+<div align="center">
+    <img src="./img/BNLN.jpg">
+</div>
+<br>
+只不过，BN是对一个batch-size样本内的每个特征做归一化，LN是对每个样本的所有特征做归一化。以一个二维矩阵为例，它的行数代表batch_size，列数代表fea_nums。BN就是竖着进行归一化，LN则是横着进行归一化。
+
+<p>所以，BN抹平了不同特征之间的大小关系，而保留了不同样本之间的大小关系。这样，如果具体任务依赖于不同样本之间的关系，BN更有效，尤其是在CV领域，例如不同图片样本进行分类，不同样本之间的大小关系得以保留。<br>LN抹平了不同样本之间的大小关系，而保留了不同特征之间的大小关系。所以，LN更适合NLP领域的任务，其中，一个样本的特征实际上就是不同word embedding，通过LN可以保留特征之间的这种时序关系。</p>
+<h3 id="Encoder-Decoder框架"><a href="#Encoder-Decoder框架" class="headerlink" title="Encoder-Decoder框架"></a>Encoder-Decoder框架</h3><p>Encoder-Decoder框架可以看作是一种深度学习领域的研究模式，应用场景异常广泛。</p>
+<p>文本处理领域的Encoder-Decoder框架可以这么直观地去理解：可以把它看作适合处理由一个句子（或篇章）生成另外一个句子（或篇章）的通用处理模型。对于句子对&lt;Source,Target&gt;，我们的目标是给定输入句子Source，期待通过Encoder-Decoder框架来生成目标句子Target。</p>
+<p>Encoder顾名思义就是对输入句子Source进行编码，将输入句子通过非线性变换转化为中间语义表示C;</p>
+<p>对于解码器Decoder来说，其任务是根据句子Source的中间语义表示C和之前已经生成的历史信息y1,y2……yi-1来生成i时刻要生成的单词yi。</p>
+<p>每个yi都依次这么产生，那么看起来就是整个系统根据输入句子Source生成了目标句子Target。</p>
+<ul>
+<li>如果Source是中文句子，Target是英文句子，那么这就是解决机器翻译问题的Encoder-Decoder框架；</li>
+<li>如果Source是一篇文章，Target是概括性的几句描述语句，那么这是文本摘要的Encoder-Decoder框架；</li>
+<li>如果Source是一句问句，Target是一句回答，那么这是问答系统或者对话机器人的Encoder-Decoder框架。</li>
+</ul>
+<p>P.S. 一般而言，文本处理和语音识别的Encoder部分通常采用RNN模型，图像处理的Encoder一般采用CNN模型。</p>
+<h3 id="Attention机制"><a href="#Attention机制" class="headerlink" title="Attention机制"></a>Attention机制</h3><p>Attention 机制 3 大优点：</p>
+<ul>
+<li><p>参数少<br>模型复杂度跟 CNN、RNN 相比，复杂度更小，参数也更少。所以对算力的要求也就更小。</p>
+</li>
+<li><p>速度快<br>Attention 解决了 RNN 不能并行计算的问题。Attention机制每一步计算不依赖于上一步的计算结果，因此可以和CNN一样并行处理。</p>
+</li>
+<li><p>效果好<br>在 Attention 机制引入之前，有一个问题大家一直很苦恼：长距离的信息会被弱化，就好像记忆能力弱的人，记不住过去的事情是一样的。<br>Attention 是挑重点，就算文本比较长，也能从中间抓住重点，不丢失重要的信息。下图红色的预期就是被挑出来的重点。</p>
+</li>
+</ul>
+<p>目前大多数注意力模型附着在Encoder-Decoder框架下，当然，其实注意力模型可以看作一种通用的思想，本身并不依赖于特定框架，这点需要注意。Attention 并不一定要在 Encoder-Decoder 框架下使用的，他是可以脱离 Encoder-Decoder 框架的。<br><br></p>
+<div align="center">
+    <img src="./img/attention01.png">
+</div>
+<br>
+将Source中的构成元素想象成是由一系列的<Key,Value>数据对构成，此时给定Target中的某个元素Query，通过计算Query和各个Key的相似性或者相关性，得到每个Key对应Value的权重系数，然后对Value进行加权求和，即得到了最终的Attention数值。所以本质上Attention机制是对Source中元素的Value值进行加权求和，而Query和Key用来计算对应Value的权重系数。即可以将其本质思想改写为如下公式：
+<br>
+<div align="center">
+    <img src="./img/attention公式.png">
+</div>
+<br>
+在一般任务的Encoder-Decoder框架中，输入Source和输出Target内容是不一样的，比如对于英-中机器翻译来说，Source是英文句子，Target是对应的翻译出的中文句子，Attention机制发生在Target的元素Query和Source中的所有元素之间。
+
+<p>而<strong>Self Attention</strong>顾名思义，指的不是Target和Source之间的Attention机制，而是Source内部元素之间或者Target内部元素之间发生的Attention机制，也可以理解为Target&#x3D;Source这种特殊情况下的注意力计算机制。其具体计算过程是一样的，只是计算对象发生了变化而已</p>
+<p>Transformer使用的点乘注意力机制和多头注意力机制：<br><br></p>
+<div align="center">
+    <img src="./img/attention原版.png">
+</div>
+<br>
+这里h=8,8个head
+<br>
+<div align="center">
+    <img src="./img/transformer原版.png">
+</div>
+<br>
+
+<h4 id="编码器的注意力机制："><a href="#编码器的注意力机制：" class="headerlink" title="编码器的注意力机制："></a>编码器的注意力机制：</h4><p>多头自注意力机制：</p>
+<ul>
+<li>key value query都是自己本身，一个向量和各个向量计算相似度<br>多头注意力块接收包含子向量（句子中的单词）的向量（句子）作为输入，然后计算每个位置与向量的所有其他位置之间的注意力。</li>
+</ul>
+<h4 id="解码器的注意力机制："><a href="#解码器的注意力机制：" class="headerlink" title="解码器的注意力机制："></a>解码器的注意力机制：</h4><p>Masked 多头自注意力机制：</p>
+<ul>
+<li>用 masked 把后面的内容盖住，自注意力机制，和编码器的自注意力机制一样。</li>
+</ul>
+<p>最后一个 多头注意力机制：</p>
+<ul>
+<li>不再是自注意力，编码器的输出作为value和key进来，解码器下一层的输出作为query进来。</li>
+</ul>
+<h3 id="Add-Norm"><a href="#Add-Norm" class="headerlink" title="Add &amp; Norm"></a>Add &amp; Norm</h3><p>残差连接&amp;归一化<br>就是指对新的output做标准化</p>
+<ul>
+<li>add代表残差连接（Residual Connection），旨在解决深度神经网络训练过程中的梯度消失和表示瓶颈问题。</li>
+<li>norm &#x3D; Normalization归一化，在transformer里面，使用layer normalization。</li>
+</ul>
+<p>add：残差连接，可以增加深度，不丢失初始的特征。<br>norm归一化，因为add把原始的特征加回来，为了避免梯度消失，减少运算，进行归一化处理。</p>
+<h3 id="FeedForward"><a href="#FeedForward" class="headerlink" title="FeedForward"></a>FeedForward</h3><p>FeedForward是由全连接层（FC）与激活ReLu组成的结构</p>
+<p>为什么要用FeedForward呢？不用单纯的FC呢？</p>
+<ul>
+<li>主要还是想提取更深层次的特征，在Multi-Head Attention中，主要是进行矩阵乘法，即都是线性变换，而线性变换的学习能力不如非线性变换的学习能力强，我们希望通过引入ReLu激活函数，使模型增加非线性成分，强化学习能力。</li>
+</ul>
+</div><div class="post-end"><div class="post-prev"></div><div class="post-reward" onclick="openPostReward()" title="赞赏"><i class="fa-regular fa-thumbs-up fa-xl fa-beat-fade"></i></div><div id="reward-panel" onclick="closePostReward()"><div class="reward-container"><p>很荣幸您喜欢这篇文章，欢迎再来，谢谢&#128151;</p>
+<div class="reward-nav"><div class="reward-item"><img class="reward-img" src="/img/reward/wechat.jpg" title="Wechat" alt="Wechat"/><span>Wechat</span></div><div class="reward-item"><img class="reward-img" src="/img/reward/alipay.jpg" title="Alipay" alt="Alipay"/><span>Alipay</span></div></div></div></div><div class="post-next"><a href="/2024/07/29/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-HTTP%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" title="下一篇文章"><i class="fa-solid fa-chevron-right fa-lg"></i></a></div></div></article><div id="post-toc"><aside class="toc-aside"><div class="toc-title"><span><i class="fa-solid fa-paw"></i>目录</span></div><div class="toc-container"><ol class="toc-content"><li class="toc-content-item toc-content-level-1"><a class="toc-content-link" href="#Attention-is-all-you-need"><span class="toc-content-number">1.</span> <span class="toc-content-text">Attention is all you need</span></a><ol class="toc-content-child"><li class="toc-content-item toc-content-level-2"><a class="toc-content-link" href="#Transfomer%E6%9E%B6%E6%9E%84"><span class="toc-content-number">1.1.</span> <span class="toc-content-text">Transfomer架构</span></a><ol class="toc-content-child"><li class="toc-content-item toc-content-level-3"><a class="toc-content-link" href="#%E5%8E%9F%E6%96%87%E7%89%87%E6%AE%B5"><span class="toc-content-number">1.1.1.</span> <span class="toc-content-text">原文片段</span></a></li><li class="toc-content-item toc-content-level-3"><a class="toc-content-link" href="#Transfomer%E5%BC%80%E5%B1%B1%E4%B9%8B%E4%BD%9C"><span class="toc-content-number">1.1.2.</span> <span class="toc-content-text">Transfomer开山之作</span></a></li><li class="toc-content-item toc-content-level-3"><a class="toc-content-link" href="#layer-norm-%E8%80%8C%E4%B8%8D%E6%98%AFbatch-norm"><span class="toc-content-number">1.1.3.</span> <span class="toc-content-text">layer norm 而不是batch norm</span></a></li><li class="toc-content-item toc-content-level-3"><a class="toc-content-link" href="#Encoder-Decoder%E6%A1%86%E6%9E%B6"><span class="toc-content-number">1.1.4.</span> <span class="toc-content-text">Encoder-Decoder框架</span></a></li><li class="toc-content-item toc-content-level-3"><a class="toc-content-link" href="#Attention%E6%9C%BA%E5%88%B6"><span class="toc-content-number">1.1.5.</span> <span class="toc-content-text">Attention机制</span></a><ol class="toc-content-child"><li class="toc-content-item toc-content-level-4"><a class="toc-content-link" href="#%E7%BC%96%E7%A0%81%E5%99%A8%E7%9A%84%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6%EF%BC%9A"><span class="toc-content-number">1.1.5.1.</span> <span class="toc-content-text">编码器的注意力机制：</span></a></li><li class="toc-content-item toc-content-level-4"><a class="toc-content-link" href="#%E8%A7%A3%E7%A0%81%E5%99%A8%E7%9A%84%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6%EF%BC%9A"><span class="toc-content-number">1.1.5.2.</span> <span class="toc-content-text">解码器的注意力机制：</span></a></li></ol></li><li class="toc-content-item toc-content-level-3"><a class="toc-content-link" href="#Add-Norm"><span class="toc-content-number">1.1.6.</span> <span class="toc-content-text">Add &amp; Norm</span></a></li><li class="toc-content-item toc-content-level-3"><a class="toc-content-link" href="#FeedForward"><span class="toc-content-number">1.1.7.</span> <span class="toc-content-text">FeedForward</span></a></li></ol></li></ol></li></ol></div></aside><div class="toc-blank" onclick="tocToggle()"></div></div></div></div><div id="tool-bar"><div id="tool-toggle" onclick="toolToggle()" title="设置"><i class="fa-solid fa-gear"></i></div><div id="toc-toggle" onclick="tocToggle()" title="目录"><i class="fa-solid fa-list-ul"></i></div><div id="back-to-top" onclick="scrollToTop()" title="返回顶部"><i class="fa-solid fa-chevron-up"></i></div></div><div id="search-panel"><div class="search-container"><div class="search-head"><div class="search-title"><span><i class="fa-solid fa-paw"></i>搜索</span></div><div class="search-close-btn" onclick="toggleSearchWindow()"><i class="fa-regular fa-circle-xmark"></i></div></div><div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="search-input" type="text" placeholder="请输入需要搜索的内容……" value=""/></div><div class="search-body"><div id="search-count">匹配结果数: </div><div id="search-result"></div><div id="search-result-empty">未搜索到匹配的文章。</div></div></div></div><footer><div class="footer-content"><div class="copyright-info"><i class="fa-regular fa-copyright fa-xs"></i><span>2024</span><a href="/about">kiyoumiii</a><i class="fa-solid fa-cat fa-sm"></i><span>Powered by</span><a href="https://hexo.io/" target="_blank">Hexo</a><span> &amp;</span><a href="https://github.com/chanwj/hexo-theme-meow" target="_blank" title="v1.0.0">Theme Meow</a></div><div class="pageview-site"><span id="busuanzi_container_site_pv">总访问量 : <span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner"></i></span></span><span id="busuanzi_container_site_uv">总访客数 : <span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner"></i></span></span></div></div></footer>
+
+<script src="/js/theme/tool-bar.js"></script>
+
+
+<script src="/js/theme/menu.js"></script>
+
+<script src="/js/theme/reward.js"></script>
+
+<script src="/js/jquery-3.7.1.min.js"></script>
+
+
+<script src="/js/theme/search.js"></script>
+<script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+  search_path = "search.xml";
+}
+var path = '/' + search_path;
+searchFunc(path, 'search-input', 'search-result');</script></body></html>
