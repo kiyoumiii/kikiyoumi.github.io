@@ -12,7 +12,7 @@
 <div class="post-word-count"><i class="icon fa-solid fa-pen-to-square"></i><span>全文约4692字</span></div><div class="pageview-post"><i class="icon fa-regular fa-eye"></i><span id="busuanzi_container_page_pv">本文阅读次数: <span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner"></i></span></span></div></div></div><div class="post-content"><h1 id="Internet-地址"><a href="#Internet-地址" class="headerlink" title="Internet 地址"></a>Internet 地址</h1><p>连接到 Internet 的每台计算机都必须具有唯一的地址。Internet 地址的格式为 nnn.nnn.nnn.nnn，其中 nnn 必须是 0 - 255 之间的数字。这 地址称为 IP 地址。</p>
 <p>下图显示了连接到 Internet 的两台计算机; 您的 IP 地址为 1.2.3.4 的计算机和另一台 IP 地址为 IP 的计算机 5.6.7.8. 互联网被表示为介于两者之间的抽象对象。</p>
 <br>
-<div align=center>
+<div align="center">
     <img src="https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag1.gif">
 </div>
 
@@ -24,7 +24,7 @@
 <p>无论您通过哪种方式连接到互联网，只要您的设备已经连接上，它就会有一个唯一的IP地址。这个IP地址是互联网上用来识别和定位您的设备的唯一标识符。这样，数据包就可以准确地发送到正确的目的地。</p>
 <h2 id="Ping"><a href="#Ping" class="headerlink" title="Ping"></a>Ping</h2><p>进入命令提示符。输入ping <a target="_blank" rel="noopener" href="http://www.yahoo.com.ping程序将向指定的计算机发送一个“ping”(实际上是一个icmp(互联网控制消息协议)回显请求消息).被ping的计算机将以回复响应.ping程序将计算回复回来之前经过的时间(如果有回复的话).此外,如果你输入一个域名(即www.yahoo.com)而不是ip地址,ping将解析域名并显示计算机的ip地址./">www.yahoo.com。Ping程序将向指定的计算机发送一个“ping”（实际上是一个ICMP（互联网控制消息协议）回显请求消息）。被ping的计算机将以回复响应。Ping程序将计算回复回来之前经过的时间（如果有回复的话）。此外，如果你输入一个域名（即www.yahoo.com）而不是IP地址，Ping将解析域名并显示计算机的IP地址。</a></p>
 <br>
-<div align=center>
+<div align="center">
     <img src="https://s2.loli.net/2024/07/28/5dt8aFZblrOsEhu.jpg">
 </div>
 
@@ -40,7 +40,7 @@
 </li>
 </ul>
 <br>
-<div align=center>
+<div align="center">
     <img src="https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag2.gif">
 </div>
 
@@ -54,7 +54,7 @@
 <p>当数据包通过协议栈向上移动时，发送计算机的协议栈添加的所有路由数据（如IP地址和端口号）都被从数据包中剥离。</p>
 <p>当数据到达协议栈的顶部时，数据包已经被重新组装成它们原来的形式，“你好，电脑5.6.7.8！”</p>
 <h1 id="网络基础设施"><a href="#网络基础设施" class="headerlink" title="网络基础设施"></a>网络基础设施</h1><br>
-<div align=center>
+<div align="center">
     <img src="https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag3.gif">
 </div>
 
@@ -62,20 +62,20 @@
 <p>你的数据包穿过电话网络和ISP的本地设备后，它们会被路由到ISP的骨干网或ISP购买带宽的骨干网上。从这里，数据包通常会经过几个路由器，经过几个骨干网、专用线路和其他网络，直到找到它们的目的地，即地址为5.6.7.8的计算机。</p>
 <h2 id="traceroute"><a href="#traceroute" class="headerlink" title="traceroute"></a>traceroute</h2><p>跟踪路由（traceroute），它显示了你的数据包到达给定互联网目的地的路径。像ping一样，你必须从命令提示符使用跟踪路由。在Windows中，使用tracert <a target="_blank" rel="noopener" href="http://www.yahoo.com.在unix提示符下,输入traceroute/">www.yahoo.com。在Unix提示符下，输入traceroute</a> <a target="_blank" rel="noopener" href="http://www.yahoo.com.像ping一样,你也可以输入ip地址而不是域名.跟踪路由将打印出所有路由器、计算机以及数据包必须经过的任何其他互联网实体的列表./">www.yahoo.com。像ping一样，你也可以输入IP地址而不是域名。跟踪路由将打印出所有路由器、计算机以及数据包必须经过的任何其他互联网实体的列表。</a></p>
 <br>
-<div align=center>
+<div align="center">
     <img src="https://s2.loli.net/2024/07/28/M9wQ1xYJdfANpCF.jpg">
 </div>
 
 <h1 id="互联网基础设施"><a href="#互联网基础设施" class="headerlink" title="互联网基础设施"></a>互联网基础设施</h1><p>互联网的骨干网由许多大型网络组成，这些网络相互连接。这些大型网络被称为<strong>网络服务提供商</strong>或<strong>NSP</strong>。一些大型NSP包括UUNet、CerfNet、IBM、BBN Planet、SprintNet、PSINet等。这些网络相互对等，以交换数据包流量。每个NSP都需要连接到三个网络接入点或NAP。在NAP，数据包流量可以从一个NSP的骨干网跳转到另一个NSP的骨干网。NSP还在城域交换（Metropolitan Area Exchanges）或MAE进行互联。MAE的作用与NAP相同，但它们是私有的。NAP是最初的互联网互联点。NAP和MAE都被称为互联网交换点或IX。NSP还向较小的网络，如ISP和较小的带宽提供商出售带宽。下面是一张显示这种分层基础设施的图片。</p>
 <br>
-<div align=center>
+<div align="center">
     <img src="https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag4.gif">
 </div>
 
 <h1 id="Internet-路由层次结构"><a href="#Internet-路由层次结构" class="headerlink" title="Internet 路由层次结构"></a>Internet 路由层次结构</h1><p>没有一台计算机知道其他任何一台计算机在哪里， 数据包不会发送到每台计算机。用于将数据包送达目的地的信息包含在每个连接到互联网的路由器所维护的路由表中。</p>
 <p>路由器是数据包交换机。每个路由器都知道它的子网络以及它们使用的IP地址。路由器通常不知道“上面”的IP地址是什么。</p>
 <p>当一个数据包到达路由器时，路由器会检查由源计算机上的IP协议层放置的IP地址。路由器会检查它的路由表。如果找到了包含IP地址的网络，数据包就会被发送到那个网络。如果没有找到包含IP地址的网络，那么路由器会将数据包通过默认路由发送出去，通常是向上层骨干网络发送到下一个路由器。希望下一个路由器会知道将数据包发送到哪里。如果它不知道，数据包将再次向上路由，直到它到达一个NSP骨干网。连接到NSP骨干网的路由器拥有最大的路由表，在这里数据包将被路由到正确的骨干网，然后它将开始通过越来越小的网络向下行进，直到找到它的目的地。<br><br></p>
-<div align=center>
+<div align="center">
     <img src="https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag5.gif">
 </div>
 
@@ -83,7 +83,7 @@
 <p>所有这些问题的答案都是域名服务或DNS。DNS是一个分布式数据库，它跟踪互联网上计算机的名称及其相应的IP地址。</p>
 <p>许多连接到互联网的计算机托管了DNS数据库的一部分以及允许其他人访问的软件。这些计算机被称为DNS服务器。没有一个DNS服务器包含整个数据库；它们只包含它的一个子集。如果一个DNS服务器不包含另一台计算机请求的域名，该DNS服务器会将请求计算机重定向到另一个DNS服务器。</p>
 <br>
-<div align=center>
+<div align="center">
     <img src="https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag6.gif">
 </div>
 
