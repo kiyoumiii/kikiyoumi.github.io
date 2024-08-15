@@ -13,7 +13,7 @@
 <p>下图显示了连接到 Internet 的两台计算机; 您的 IP 地址为 1.2.3.4 的计算机和另一台 IP 地址为 IP 的计算机 5.6.7.8. 互联网被表示为介于两者之间的抽象对象。</p>
 <br>
 <div align="center">
-    <img src="https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag1.gif">
+    <img src="/2024/07/27/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/07/27/前端基础-互联网基本原理">
 </div>
 
 <p>两种不同的互联网连接方式以及它们如何分配IP地址:</p>
@@ -25,7 +25,7 @@
 <h2 id="Ping"><a href="#Ping" class="headerlink" title="Ping"></a>Ping</h2><p>进入命令提示符。输入ping <a target="_blank" rel="noopener" href="http://www.yahoo.com.ping程序将向指定的计算机发送一个“ping”(实际上是一个icmp(互联网控制消息协议)回显请求消息).被ping的计算机将以回复响应.ping程序将计算回复回来之前经过的时间(如果有回复的话).此外,如果你输入一个域名(即www.yahoo.com)而不是ip地址,ping将解析域名并显示计算机的ip地址./">www.yahoo.com。Ping程序将向指定的计算机发送一个“ping”（实际上是一个ICMP（互联网控制消息协议）回显请求消息）。被ping的计算机将以回复响应。Ping程序将计算回复回来之前经过的时间（如果有回复的话）。此外，如果你输入一个域名（即www.yahoo.com）而不是IP地址，Ping将解析域名并显示计算机的IP地址。</a></p>
 <br>
 <div align="center">
-    <img src="https://s2.loli.net/2024/07/28/5dt8aFZblrOsEhu.jpg">
+    <img src="/2024/07/27/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/07/27/前端基础-互联网基本原理">
 </div>
 
 <h1 id="协议栈和数据包"><a href="#协议栈和数据包" class="headerlink" title="协议栈和数据包"></a>协议栈和数据包</h1><p> 假设你的IP地址是1.2.3.4，你想向IP地址为5.6.7.8的电脑发送一条消息。你想发送的消息是“你好，电脑5.6.7.8！”。显然，这条消息必须通过连接你的电脑到互联网的某种线路来传输。假设你从家里拨号连接到你的ISP，那么这条消息必须通过电话线传输。因此，这条消息必须从字母文本转换为电子信号，通过互联网传输，然后再转换回字母文本。这是如何实现的呢？通过使用协议栈。每台电脑都需要一个协议栈来进行互联网通信，它通常内置在电脑的操作系统中（例如Windows、Unix等）。在互联网上使用的协议栈被称为TCP&#x2F;IP协议栈，因为它使用了两个主要的通信协议。</p>
@@ -41,7 +41,7 @@
 </ul>
 <br>
 <div align="center">
-    <img src="https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag2.gif">
+    <img src="/2024/07/27/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/07/27/前端基础-互联网基本原理">
 </div>
 
 <p>消息会从你的电脑的协议栈顶部开始，然后向下工作。</p>
@@ -55,7 +55,7 @@
 <p>当数据到达协议栈的顶部时，数据包已经被重新组装成它们原来的形式，“你好，电脑5.6.7.8！”</p>
 <h1 id="网络基础设施"><a href="#网络基础设施" class="headerlink" title="网络基础设施"></a>网络基础设施</h1><br>
 <div align="center">
-    <img src="https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag3.gif">
+    <img src="/2024/07/27/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/07/27/前端基础-互联网基本原理">
 </div>
 
 <p>ISP维护着一个为拨号客户准备的调制解调器池。这是由某种计算机（通常是专用的）管理的，它控制着从调制解调器池到骨干网或专用线路路由器的数据流。这种设置可能被称为端口服务器，因为它提供了对网络的访问。计费和使用信息通常也在这里收集。</p>
@@ -63,20 +63,20 @@
 <h2 id="traceroute"><a href="#traceroute" class="headerlink" title="traceroute"></a>traceroute</h2><p>跟踪路由（traceroute），它显示了你的数据包到达给定互联网目的地的路径。像ping一样，你必须从命令提示符使用跟踪路由。在Windows中，使用tracert <a target="_blank" rel="noopener" href="http://www.yahoo.com.在unix提示符下,输入traceroute/">www.yahoo.com。在Unix提示符下，输入traceroute</a> <a target="_blank" rel="noopener" href="http://www.yahoo.com.像ping一样,你也可以输入ip地址而不是域名.跟踪路由将打印出所有路由器、计算机以及数据包必须经过的任何其他互联网实体的列表./">www.yahoo.com。像ping一样，你也可以输入IP地址而不是域名。跟踪路由将打印出所有路由器、计算机以及数据包必须经过的任何其他互联网实体的列表。</a></p>
 <br>
 <div align="center">
-    <img src="https://s2.loli.net/2024/07/28/M9wQ1xYJdfANpCF.jpg">
+    <img src="/2024/07/27/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/07/27/前端基础-互联网基本原理">
 </div>
 
 <h1 id="互联网基础设施"><a href="#互联网基础设施" class="headerlink" title="互联网基础设施"></a>互联网基础设施</h1><p>互联网的骨干网由许多大型网络组成，这些网络相互连接。这些大型网络被称为<strong>网络服务提供商</strong>或<strong>NSP</strong>。一些大型NSP包括UUNet、CerfNet、IBM、BBN Planet、SprintNet、PSINet等。这些网络相互对等，以交换数据包流量。每个NSP都需要连接到三个网络接入点或NAP。在NAP，数据包流量可以从一个NSP的骨干网跳转到另一个NSP的骨干网。NSP还在城域交换（Metropolitan Area Exchanges）或MAE进行互联。MAE的作用与NAP相同，但它们是私有的。NAP是最初的互联网互联点。NAP和MAE都被称为互联网交换点或IX。NSP还向较小的网络，如ISP和较小的带宽提供商出售带宽。下面是一张显示这种分层基础设施的图片。</p>
 <br>
 <div align="center">
-    <img src="https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag4.gif">
+    <img src="/2024/07/27/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/07/27/前端基础-互联网基本原理">
 </div>
 
 <h1 id="Internet-路由层次结构"><a href="#Internet-路由层次结构" class="headerlink" title="Internet 路由层次结构"></a>Internet 路由层次结构</h1><p>没有一台计算机知道其他任何一台计算机在哪里， 数据包不会发送到每台计算机。用于将数据包送达目的地的信息包含在每个连接到互联网的路由器所维护的路由表中。</p>
 <p>路由器是数据包交换机。每个路由器都知道它的子网络以及它们使用的IP地址。路由器通常不知道“上面”的IP地址是什么。</p>
 <p>当一个数据包到达路由器时，路由器会检查由源计算机上的IP协议层放置的IP地址。路由器会检查它的路由表。如果找到了包含IP地址的网络，数据包就会被发送到那个网络。如果没有找到包含IP地址的网络，那么路由器会将数据包通过默认路由发送出去，通常是向上层骨干网络发送到下一个路由器。希望下一个路由器会知道将数据包发送到哪里。如果它不知道，数据包将再次向上路由，直到它到达一个NSP骨干网。连接到NSP骨干网的路由器拥有最大的路由表，在这里数据包将被路由到正确的骨干网，然后它将开始通过越来越小的网络向下行进，直到找到它的目的地。<br><br></p>
 <div align="center">
-    <img src="https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag5.gif">
+    <img src="/2024/07/27/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/07/27/前端基础-互联网基本原理">
 </div>
 
 <h1 id="域名和地址解析"><a href="#域名和地址解析" class="headerlink" title="域名和地址解析"></a>域名和地址解析</h1><p>但是，如果你不知道你想连接的计算机的IP地址怎么办？如果你需要访问一个被称为<a href="http://www.anothercomputer.com的Web服务器怎么办？你的Web浏览器是如何知道这台计算机在互联网上的哪个位置的？">www.anothercomputer.com的Web服务器怎么办？你的Web浏览器是如何知道这台计算机在互联网上的哪个位置的？</a></p>
@@ -84,7 +84,7 @@
 <p>许多连接到互联网的计算机托管了DNS数据库的一部分以及允许其他人访问的软件。这些计算机被称为DNS服务器。没有一个DNS服务器包含整个数据库；它们只包含它的一个子集。如果一个DNS服务器不包含另一台计算机请求的域名，该DNS服务器会将请求计算机重定向到另一个DNS服务器。</p>
 <br>
 <div align="center">
-    <img src="https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag6.gif">
+    <img src="/2024/07/27/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%BA%92%E8%81%94%E7%BD%91%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/07/27/前端基础-互联网基本原理">
 </div>
 
 
