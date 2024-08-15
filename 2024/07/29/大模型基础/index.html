@@ -6,10 +6,10 @@
 
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
 <meta name="generator" content="Hexo 7.3.0"></head><body><header><div class="top-nav" ondblclick="scrollToTop()"><div class="nav-info"><div class="nav-icon"><img id="nav-icon" src="/img/site-icon.png"/></div><div class="nav-title"><a id="nav-title" href="/" title="主页">Hexo</a></div></div><div class="nav-ribbon"><div class="top-menu-expanded"><a class="top-menu-item" href="/archives"><span>归档</span></a><a class="top-menu-item" href="/categories"><span>分类</span></a><a class="top-menu-item" href="/tags"><span>标签</span></a><a class="top-menu-item" href="/about"><span>关于</span></a></div><div class="top-search" onclick="toggleSearchWindow()"><div id="top-search-btn" title="搜索"><i class="icon fa-solid fa-magnifying-glass"></i><span>搜索</span></div></div><div id="top-menu-btn" onclick="openTopMenu()" title="打开菜单"><i class="fa-solid fa-bars fa-lg"></i></div></div></div></header><div id="top-menu-hidden"><div class="menu-hidden-content"><div class="menu-hidden-nav"><a class="menu-hidden-item" href="/archives"><i class="fa-solid fa-box-archive fa-sm"></i><span>归档</span></a><a class="menu-hidden-item" href="/categories"><i class="fa-regular fa-folder-open fa-sm"></i><span>分类</span></a><a class="menu-hidden-item" href="/tags"><i class="fa-solid fa-tags fa-sm"></i><span>标签</span></a><a class="menu-hidden-item" href="/about"><i class="fa-solid fa-paw fa-sm"></i><span>关于</span></a></div></div><div class="menu-hidden-blank" onclick="closeTopMenu()"></div></div>
-<div class="blog-info"><div class="blog-pic"><img id="blog-pic" src="/img/site-icon.png"/></div><div class="blog-title"><i class="fa-solid fa-paw fa-2xs fa-rotate-by"></i><span>MEOW</span><i class="fa-solid fa-paw fa-2xs fa-rotate-by"></i></div><div class="blog-desc">个人小站，记录学习点滴，欢迎访问~</div></div><div class="main"><div class="main-content"><article class="post"><div class="post-title"><h1><i class="fa-solid fa-paw"></i>大模型基础</h1></div><div class="post-info"><div class="post-info-first-line"><div class="post-date"><i class="icon fa-regular fa-calendar-plus" title="发布日期"></i><time class="publish-time">2024-07-29</time><i class="icon fa-regular fa-calendar-check" title="更新日期"></i><time class="update-time">2024-07-31</time></div>
+<div class="blog-info"><div class="blog-pic"><img id="blog-pic" src="/img/site-icon.png"/></div><div class="blog-title"><i class="fa-solid fa-paw fa-2xs fa-rotate-by"></i><span>MEOW</span><i class="fa-solid fa-paw fa-2xs fa-rotate-by"></i></div><div class="blog-desc">个人小站，记录学习点滴，欢迎访问~</div></div><div class="main"><div class="main-content"><article class="post"><div class="post-title"><h1><i class="fa-solid fa-paw"></i>大模型基础</h1></div><div class="post-info"><div class="post-info-first-line"><div class="post-date"><i class="icon fa-regular fa-calendar-plus" title="发布日期"></i><time class="publish-time">2024-07-29</time><i class="icon fa-regular fa-calendar-check" title="更新日期"></i><time class="update-time">2024-08-16</time></div>
 
 </div><div class="post-info-second-line"><div class="post-copyright"><i class="icon fa-brands fa-creative-commons" title="版权声明"></i><span>版权声明: </span><a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans" title="CC BY-NC-ND 4.0">署名-非商业性使用-禁止演绎 4.0</a></div>
-<div class="post-word-count"><i class="icon fa-solid fa-pen-to-square"></i><span>全文约2711字</span></div><div class="pageview-post"><i class="icon fa-regular fa-eye"></i><span id="busuanzi_container_page_pv">本文阅读次数: <span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner"></i></span></span></div></div></div><div class="post-content"><h1 id="Attention-is-all-you-need"><a href="#Attention-is-all-you-need" class="headerlink" title="Attention is all you need"></a>Attention is all you need</h1><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pu411o7BE/?spm_id_from=333.999.0.0&vd_source=27bfe73442d060c8d6150bb8b61d24a2">论文精讲</a></p>
+<div class="post-word-count"><i class="icon fa-solid fa-pen-to-square"></i><span>全文约2718字</span></div><div class="pageview-post"><i class="icon fa-regular fa-eye"></i><span id="busuanzi_container_page_pv">本文阅读次数: <span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner"></i></span></span></div></div></div><div class="post-content"><h1 id="Attention-is-all-you-need"><a href="#Attention-is-all-you-need" class="headerlink" title="Attention is all you need"></a>Attention is all you need</h1><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pu411o7BE/?spm_id_from=333.999.0.0&vd_source=27bfe73442d060c8d6150bb8b61d24a2">论文精讲</a></p>
 <h2 id="Transfomer架构"><a href="#Transfomer架构" class="headerlink" title="Transfomer架构"></a>Transfomer架构</h2><h3 id="原文片段"><a href="#原文片段" class="headerlink" title="原文片段"></a>原文片段</h3><p>“主流的序列转换模型都是基于复杂的循环神经网络或卷积神经网络，且都包含一个encoder和一个decoder。表现最好的模型还通过attention机制把encoder和decoder联接起来。而Transformer只基于单独的attention机制，完全避免使用循环和卷积。</p>
 <p>encoder将符号表示的输入序列( x 1 , . . . , x n ) 映射成一个连续表示的序列z &#x3D; ( z 1 , . . . , z n ) </p>
 <p>给定z ，解码器以一次生成一个字符的方式生成输出序列( y 1 , . . . , y m ) 。在每一步，模型都是自回归的。在生成下一个字符时，将先前生成的符号作为附加输入。</p>
@@ -17,7 +17,7 @@
 <p>Encoder : encoder由N(N&#x3D;6)个完全相同的layer堆叠而成，每层有两个子层。第一层是multi-head self-attention机制，第二层是一个简单的、位置全连接的前馈神经网络。我们在两个子层的每一层后采用残差连接，接着进行layer normalization。</p>
 <p>Decoder : decoder也由N(N&#x3D;6)个完全相同的layer堆叠而成。除了每个编码器层中的两个子层之外，解码器还插入第三个子层，该子层对编码器堆栈的输出执行multi-head attention操作，与encoder相似，我们在每个子层的后面使用了残差连接，之后采用了layer normalization。”</p>
 <div align="center">
-    <img src="./大模型基础/transformer原版.png">
+    <style>.hcfluhlqxeir{}</style><img src="/2024/07/29/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/transformer%E5%8E%9F%E7%89%88.png" class="hcfluhlqxeir">
 </div>
 
 <h3 id="Transfomer开山之作"><a href="#Transfomer开山之作" class="headerlink" title="Transfomer开山之作"></a>Transfomer开山之作</h3><p>在Transformer提出以前，主流的NLP模型包括RNN、LSTM、GRU等，这些模型是有以下缺点：</p>
@@ -30,13 +30,13 @@
 <p>所以，作者团队因势利导，引出了本文纯attention、高并行、高效率的Transformer网络结构。</p>
 <p>Transformer这种神经网络架构，其独特之处在于完全基于注意力机制，摒弃了传统的循环和卷积操作。通过自注意力机制（self-attention），Transformer能够有效捕捉输入序列中的长距离依赖关系，使得模型在处理长文本时更为高效和准确。多头注意力机制（multi-head attention）则进一步增强了模型的表达能力，使其能够同时关注输入序列中的不同部分，捕捉更加复杂的语义关系。</p>
 <div align="center">
-    <img src="./大模型基础/transformer01.png">
+    <style>.cbhsbolqixtn{}</style><img src="/2024/07/29/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/transformer01.png" class="cbhsbolqixtn">
 </div>
 
 <h3 id="layer-norm-而不是batch-norm"><a href="#layer-norm-而不是batch-norm" class="headerlink" title="layer norm 而不是batch norm"></a>layer norm 而不是batch norm</h3><p>当我们使用梯度下降法做优化时，随着网络深度的增加，输入数据的特征分布会不断发生变化，为了保证数据特征分布的稳定性，会加入Normalization。从而可以使用更大的学习率，从而加速模型的收敛速度。同时，Normalization也有一定的抗过拟合作用，使训练过程更加平稳。具体地，Normalization的主要作用就是把每层特征输入到激活函数之前，对它们进行normalization，使其转换为均值为0，方差为1的数据，从而可以避免数据落在激活函数的饱和区，以减少梯度消失的问题。</p>
 <p>BN（BatchNorm）和LN（LayerNorm）是两种最常用的Normalization的方法，它们都是将输入特征转换为均值为0，方差为1的数据，它们的形式是：<br><br></p>
 <div align="center">
-    <img src="./大模型基础/BNLN.jpg">
+    <style>.vigjcntpndjo{}</style><img src="/2024/07/29/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/BNLN.jpg" class="vigjcntpndjo">
 </div>
 <br>
 只不过，BN是对一个batch-size样本内的每个特征做归一化，LN是对每个样本的所有特征做归一化。以一个二维矩阵为例，它的行数代表batch_size，列数代表fea_nums。BN就是竖着进行归一化，LN则是横着进行归一化。
@@ -64,13 +64,13 @@
 </ul>
 <p>目前大多数注意力模型附着在Encoder-Decoder框架下，当然，其实注意力模型可以看作一种通用的思想，本身并不依赖于特定框架，这点需要注意。Attention 并不一定要在 Encoder-Decoder 框架下使用的，他是可以脱离 Encoder-Decoder 框架的。<br><br></p>
 <div align="center">
-    <img src="./大模型基础/attention01.png">
+    <style>.miyhjjgbucjc{}</style><img src="/2024/07/29/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/attention01.png" class="miyhjjgbucjc">
 </div>
 <br>
 将Source中的构成元素想象成是由一系列的<Key,Value>数据对构成，此时给定Target中的某个元素Query，通过计算Query和各个Key的相似性或者相关性，得到每个Key对应Value的权重系数，然后对Value进行加权求和，即得到了最终的Attention数值。所以本质上Attention机制是对Source中元素的Value值进行加权求和，而Query和Key用来计算对应Value的权重系数。即可以将其本质思想改写为如下公式：
 <br>
 <div align="center">
-    <img src="./大模型基础/Attention公式.png">
+    <style>.srnryfsyjnyf{}</style><img src="/2024/07/29/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/Attention%E5%85%AC%E5%BC%8F.png" class="srnryfsyjnyf">
 </div>
 <br>
 在一般任务的Encoder-Decoder框架中，输入Source和输出Target内容是不一样的，比如对于英-中机器翻译来说，Source是英文句子，Target是对应的翻译出的中文句子，Attention机制发生在Target的元素Query和Source中的所有元素之间。
@@ -78,13 +78,13 @@
 <p>而<strong>Self Attention</strong>顾名思义，指的不是Target和Source之间的Attention机制，而是Source内部元素之间或者Target内部元素之间发生的Attention机制，也可以理解为Target&#x3D;Source这种特殊情况下的注意力计算机制。其具体计算过程是一样的，只是计算对象发生了变化而已</p>
 <p>Transformer使用的点乘注意力机制和多头注意力机制：<br><br></p>
 <div align="center">
-    <img src="./大模型基础/attention原版.png">
+    <style>.eqvsecimdjvm{}</style><img src="/2024/07/29/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/attention%E5%8E%9F%E7%89%88.png" class="eqvsecimdjvm">
 </div>
 <br>
 这里h=8,8个head
 <br>
 <div align="center">
-    <img src="./大模型基础/transformer原版.png">
+    <style>.wfqgpppsnchl{}</style><img src="/2024/07/29/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/transformer%E5%8E%9F%E7%89%88.png" class="wfqgpppsnchl">
 </div>
 <br>
 
