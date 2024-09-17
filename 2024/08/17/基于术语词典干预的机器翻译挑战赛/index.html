@@ -41,17 +41,17 @@
 <li>spacy：是一个强大的自然语言处理库，支持70+语言的分词与训练</li>
 </ul>
 <div align="center">
-    <style>.bfdnvnhcwbgg{}</style><img src="/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/spacy.png" class="bfdnvnhcwbgg">
+    <style>.ayycngmoralc{}</style><img src="/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/spacy.png" class="ayycngmoralc">
 </div>
 
 <p>需要注意的是，使用命令!python -m spacy download en_core_web_trf安装 en_core_web_sm 语言包非常的慢，经常会安装失败,因此可以离线安装 en_core_web_sm 语言包，从该路径下：<a target="_blank" rel="noopener" href="https://github.com/explosion/spacy-models/releases">https://github.com/explosion/spacy-models/releases</a> 安装对应版本的 en_core_web_trf 语言包，可以看到我的 en_core_web_trf 3.7.3 版本的要求 spaCy &gt;&#x3D;3.7.2,&lt;3.8.0，刚好满足我的 3.7.5的 spacy!：</p>
 <div align="center">
-    <style>.abxynehpremc{}</style><img src="/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/encore.png" class="abxynehpremc">
+    <style>.ubszdlxtnfrg{}</style><img src="/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/encore.png" class="ubszdlxtnfrg">
 </div>
 
 <p>将下载到本地的压缩包上传到你的魔搭平台上的  dataset 目录下，然后使用 !pip install ..&#x2F;dataset&#x2F;en_core_web_trf安装英文语言包：</p>
 <div align="center">
-    <style>.qovvxfyxrfpe{}</style><img src="/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/model.png" class="qovvxfyxrfpe">
+    <style>.qvwpnepxfrvg{}</style><img src="/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/model.png" class="qvwpnepxfrvg">
 </div>
 
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">!pip install -U pip setuptools wheel -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line">pip install -U <span class="string">&#x27;spacy[cuda12x,transformers,lookups]&#x27;</span> -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line">!pip install ../dataset/en_core_web_trf-<span class="number">3.7</span><span class="number">.3</span>-py3-none-<span class="built_in">any</span>.whl</span><br></pre></td></tr></table></figure>
@@ -102,7 +102,7 @@
 </ul>
 <h3 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h3><p>说到神经机器翻译就不得不提编码器-解码器模型，或编码器-解码器框架（EncoderDecoder Paradigm）。本质上，编码器­解码器模型是描述输入­输出之间关系的一种方式。编码器­解码器这个概念在日常生活中并不少见。</p>
 <div align="center">
-    <style>.obhmxsmwdtje{}</style><img src="/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/e-d.png" class="obhmxsmwdtje">
+    <style>.hobsrssvqsbg{}</style><img src="/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/e-d.png" class="hobsrssvqsbg">
 </div>
 
 <p><code>给定一个中文句子“我/对/你/感到/满意”，编码器会将这句话编码成一个实数向量(0.2, −1, 6, 5, 0.7, −2)，这个向量就是源语言句子的“表示”结果。虽然有些不可思议，但是神经机器翻译模型把这个向量等同于输入序列。向量中的数字并没有实际的意义，然而解码器却能从中提取到源语言句子中所包含的信息。也有研究人员把向量的每一个维度看作是一个“特征”，这样源语言句子就被表示成多个“特征”的联合，而且这些特征可以被自动学习。有了这样的源语言句子的“表示”，解码器可以把这个实数向量作为输入，然后逐词生成目标语言句子“I am satisfied with you”。</code></p>
@@ -114,20 +114,20 @@
 <p>解码器的结构基本上和编码器是一致的，在基于循环神经网络的翻译模型中，解码器只比编码器多了输出层，用于输出每个目标语言位置的单词生成概率，而在基于自注意力机制的翻译模型中，除了输出层，解码器还比编码器多一个编码­解码注意力子层，用于帮助模型更好地利用源语言信息。</p>
 <p>通过循环网络对源语言文本进行编码，并生成目标语言翻译结果的过程十分简单。然而，它仅仅使用一个定长的向量 $$h_{m}$$ 编码整个源语言序列。这对于较短的源语言文本没有什么问题，但随着文本序列长度的逐渐加长，单一的一个向量 hm 可能不足以承载源语言序列当中的所有信息。</p>
 <div align="center">
-    <style>.cctnmxlqsafk{}</style><img src="/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/RNN_BLUE.png" class="cctnmxlqsafk">
+    <style>.bbjydlxgcfey{}</style><img src="/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/RNN_BLUE.png" class="bbjydlxgcfey">
 </div>
 
 <p>蓝色的线代表上述简单循环神经网络性能随源语言文本长度的变化趋势。当文本长度在 20 个单词以内时，单一向量能够承载源语言文本中的必要信息。随着文本序列的进一步增加，翻译性能的评价指标 BLEU 的值就开始出现明显地下降。因此，这就启发我们使用更加有效地机制从编码器向解码器传递源语言信息，这就是接下来要讲到的注意力机制。</p>
 <p>引入注意力机制的循环机器翻译架构与基于简单循环网络的机器翻译模型大体结构相似，均采用循环神经网络作为编码器与解码器的实现。关键的不同点在于注意力机制的引入使得不再需要把原始文本中的所有必要信息压缩到一个向量当中。引入注意力机制的循环神经网络机器翻译架构如图所示:</p>
 <p>1.无注意力机制：<br><br></p>
 <div align="center">
-    <style>.raqkmclpntfs{}</style><img src="/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/no_attention.png" class="raqkmclpntfs">
+    <style>.roettmgchqdy{}</style><img src="/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/no_attention.png" class="roettmgchqdy">
 </div>
 <br>
 2.引入注意力机制：
 <br>
 <div align="center">
-    <style>.gzombhwtmmvg{}</style><img src="/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/attention.png" class="gzombhwtmmvg">
+    <style>.kyjrqxilnecq{}</style><img src="/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/attention.png" class="kyjrqxilnecq">
 </div>
 <br>
 
