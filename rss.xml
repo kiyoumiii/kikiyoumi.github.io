@@ -10,8 +10,257 @@
         </author>
         <description>kiyoumiii&#39;s blog</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 05 Jan 2025 21:07:22 +0800</pubDate>
-        <lastBuildDate>Sun, 05 Jan 2025 21:07:22 +0800</lastBuildDate>
+        <pubDate>Mon, 06 Jan 2025 16:01:29 +0800</pubDate>
+        <lastBuildDate>Mon, 06 Jan 2025 16:01:29 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://kiyoumiii.github.io/2025/01/06/vue%E8%84%9A%E6%89%8B%E6%9E%B6%E4%B8%80%E8%A7%88%E8%A1%A8/</guid>
+            <title>vue脚手架一览表</title>
+            <link>https://kiyoumiii.github.io/2025/01/06/vue%E8%84%9A%E6%89%8B%E6%9E%B6%E4%B8%80%E8%A7%88%E8%A1%A8/</link>
+            <category term="Vue" scheme="https://kiyoumiii.github.io/categories/vue/" />
+            <category term="Vue" scheme="https://kiyoumiii.github.io/tags/Vue/" />
+            <pubDate>Mon, 06 Jan 2025 16:01:29 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;vue脚手架一览表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vue脚手架一览表&#34;&gt;#&lt;/a&gt; vue 脚手架一览表&lt;/h2&gt;
+&lt;p&gt;1、使用 vue 脚手架安装项目&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名称&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;node-v&lt;/td&gt;
+&lt;td&gt;查看 node 版本&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;npm -v&lt;/td&gt;
+&lt;td&gt;查看 npm 版本&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;nrm&lt;/td&gt;
+&lt;td&gt;用来切换 npm 下载源：安装指令：npm install nrm -gnpm install nrm -g 可以使用 nrm ls，查看有哪些源；使用 nrm use XXX 切换下载源&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;@vue/cli&lt;/td&gt;
+&lt;td&gt;vue 较新版本的脚手架，用来创建 vue 项目：1、使用 npm install -g @vue/cli 安装脚手架 2、执行 vue create XXX，创建项目，项目名是 XXX 3、执行 cd XXX，进入项目 4、执行 npm run serve 启动项目。备注：如果之前安装过老版本的脚手架工具，可以使用 npm uninstall vue-cli -g 指令卸载一下&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;2、路由&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名称&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;createRouter()&lt;/td&gt;
+&lt;td&gt;创建路由&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;path&lt;/td&gt;
+&lt;td&gt;配置路由路径&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;name&lt;/td&gt;
+&lt;td&gt;配置路由的名字&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;component&lt;/td&gt;
+&lt;td&gt;配置路由的组件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;router-link&lt;/td&gt;
+&lt;td&gt;跳转路由的标签，具体跳到哪，可以用 to 属性来定义&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;router-view&lt;/td&gt;
+&lt;td&gt;负责展示当前路由对应的组件内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;import&lt;/td&gt;
+&lt;td&gt;异步加载路由&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;3、vuex&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名称&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;createStore()&lt;/td&gt;
+&lt;td&gt;创建 vuex，管理全局数据&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;state&lt;/td&gt;
+&lt;td&gt;用来创建全局数据可以通过 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3RoaXMuJHN0b3JlLnN0YXRlLnh4eA==&#34;&gt;this.$store.state.xxx&lt;/span&gt; 获取具体的数据&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;actions&lt;/td&gt;
+&lt;td&gt;定义 action&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;dispatch&lt;/td&gt;
+&lt;td&gt;派发 action&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mutations&lt;/td&gt;
+&lt;td&gt;定义 mutations&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;commit&lt;/td&gt;
+&lt;td&gt;提交一个 commit，触发一个 mutation; 在 action 中使用：this.commit (xxx); 在 mutation 中使用：this.$store.commit (xxx)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;modules&lt;/td&gt;
+&lt;td&gt;对 store 进行局部拆分（了解即可）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;4、发送 ajax 请求&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名称&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;axios&lt;/td&gt;
+&lt;td&gt;插件，用来发送 ajax 请求:npm install axios --save 通过 get 方法，发送 get 请求，通过 post 方法，发送 post 请求&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;5、插件&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名称&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Vetur&lt;/td&gt;
+&lt;td&gt;vscode 开发 vue 项目时，语法提示插件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://kiyoumiii.github.io/2025/01/06/Sass-Scss-css%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/</guid>
+            <title>Sass/Scss-css预处理器</title>
+            <link>https://kiyoumiii.github.io/2025/01/06/Sass-Scss-css%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/</link>
+            <category term="Vue" scheme="https://kiyoumiii.github.io/categories/vue/" />
+            <category term="Vue" scheme="https://kiyoumiii.github.io/tags/Vue/" />
+            <pubDate>Mon, 06 Jan 2025 13:47:26 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;sassscss-css预处理器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sassscss-css预处理器&#34;&gt;#&lt;/a&gt; Sass/Scss-css 预处理器&lt;/h2&gt;
+&lt;h3 id=&#34;sass的诞生&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sass的诞生&#34;&gt;#&lt;/a&gt; Sass 的诞生&lt;/h3&gt;
+&lt;p&gt;众所周知 css 并不能算是一们真正意义上的 “编程” 语言，它本身无法未完成像其它编程语言一样的嵌套、继承、设置变量等工作。&lt;br /&gt;
+为了解决 css 的不足，开发者们想到了编写一种对 css 进行预处理的 “中间语言”，可以实现一些 “编程” 语言才有的功能，然后自动编译成 css 供浏览识别，这样既一定程度上弥补了 css 的不足，也无需一种新的语言来代替 css 以供浏览器识别。&lt;br /&gt;
+于是 css 预处理语言 SASS 就应运而生了。它诞生于 2007 年，是最早成熟 css 预处理语言。&lt;/p&gt;
+&lt;h3 id=&#34;1-什么是sass&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-什么是sass&#34;&gt;#&lt;/a&gt; 1. 什么是 Sass?&lt;/h3&gt;
+&lt;p&gt;Sass 是 css 的预处理器，它能用来清晰地、结构化地描述文件样式，有着比普通 CSS 更加强大的功能。&lt;/p&gt;
+&lt;p&gt;Sass 能够提供更简洁、更优雅的语法，同时提供多种功能来创建可维护和管理的样式表，有助于更好地组织管理样式文件，以及更高效地开发项目。&lt;/p&gt;
+&lt;p&gt;sass 是采用的 Ruby 语言编写的一款 css 预处理语言&lt;/p&gt;
+&lt;p&gt;sass 是最早的 css 预处理语言，有比 less 更为强大的功能。也是目前企业级开发中应用最多的 CSS 预处理器。&lt;/p&gt;
+&lt;h3 id=&#34;2-列出-sass-的一些常用功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-列出-sass-的一些常用功能&#34;&gt;#&lt;/a&gt; 2、列出 Sass 的一些常用功能 ？&lt;/h3&gt;
+&lt;p&gt;常用功能&lt;/p&gt;
+&lt;p&gt;一个开源的预处理器，被解析为 CSS&lt;br /&gt;
+ 完全兼容 CSS3&lt;br /&gt;
+ 在 CSS 基础上增加变量、嵌套 、混合等功能&lt;br /&gt;
+在更少的时间内轻松地编写 CSS 代码&lt;br /&gt;
+自定义输出格式&lt;/p&gt;
+&lt;h3 id=&#34;3-解释-scss-和-sass-之间的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-解释-scss-和-sass-之间的区别&#34;&gt;#&lt;/a&gt; 3、解释 SCSS 和 Sass 之间的区别 ？&lt;/h3&gt;
+&lt;p&gt;区别&lt;/p&gt;
+&lt;p&gt;Sass 和 SCSS 其实就是同一种东西，我们平时都称之为 Sass，两者之间不同之处主要有以下两点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;文件扩展名不同，Sass 是以.sass 后缀为扩展名，而 SCSS 是以.scss 后缀为扩展名。&lt;/li&gt;
+&lt;li&gt;语法书写方式不同，Sass 是以严格的缩进式语法规则来书写，不带大括号 {} 和分号；，而 SCSS 的语法书写和我们的 CSS 语法书写方式非常类似。&lt;/li&gt;
+&lt;li&gt;sass 从第三代开始，放弃了缩进式风格，并且完全向下兼容普通的 css 代码，这一代的 sass 也被称为 scss。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-sass-中的嵌套规则是什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4-sass-中的嵌套规则是什么&#34;&gt;#&lt;/a&gt; 4、Sass 中的嵌套规则是什么 ？&lt;/h3&gt;
+&lt;p&gt;嵌套规则&lt;/p&gt;
+&lt;p&gt;嵌套是一种将多个逻辑结构相互组合的方法。在 Sass 中，各种 CSS 规则相互连接。&lt;/p&gt;
+&lt;p&gt;例如：如果使用多个选择器，则可以在另一个选择器内部使用一个选择器来创建复合选择器。&lt;/p&gt;
+&lt;h3 id=&#34;5-sass-基础知识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5-sass-基础知识&#34;&gt;#&lt;/a&gt; 5、Sass 基础知识&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名称&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Live Sass Compiler（Sass 编译插件）&lt;/td&gt;
+&lt;td&gt;VScode 编译 sass 的插件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;.scss （sass 文件后缀名）&lt;/td&gt;
+&lt;td&gt;sass 文件的后缀名之一。在该文件中，可以写花括号 {} 和分号&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;.sass （sass 文件后缀名）&lt;/td&gt;
+&lt;td&gt;sass 文件的后缀名之一。在该文件中，不能写花括号 {} 和分号&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;（sass 修饰符）&lt;/td&gt;
+&lt;td&gt;修饰符，表示上层标签。如下: &lt;code&gt;span&amp;#123;&amp;amp;:active&amp;#123;color: red;&amp;#125;&amp;#125;编译后的代码是 span:active &amp;#123; color: red; &amp;#125; &lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;6-sass-常用变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6-sass-常用变量&#34;&gt;#&lt;/a&gt; 6、sass 常用变量&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名称&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$ （变量前缀）&lt;/td&gt;
+&lt;td&gt;使用 $，可以用来定义 css 变量（变量名可自定义）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;lighten()&lt;/td&gt;
+&lt;td&gt;颜色变量相关的功能函数，可以把颜色变浅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;darken()&lt;/td&gt;
+&lt;td&gt;颜色变量相关的功能函数，可以把颜色变深&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;@import&lt;/td&gt;
+&lt;td&gt;关键字，可以用来引入 css 变量&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;@mixin&lt;/td&gt;
+&lt;td&gt;关键字，用来定义混入的内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;@include&lt;/td&gt;
+&lt;td&gt;关键字，用来引入 @mixin 定义的混入&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;@content&lt;/td&gt;
+&lt;td&gt;关键字。当引入 mixin 时，@include 花括号中的内容可以用该关键字代替&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://kiyoumiii.github.io/2025/01/05/vue%E8%BF%9B%E9%98%B6%E4%B8%80%E8%A7%88/</guid>
             <title>vue进阶一览</title>
@@ -825,6 +1074,7 @@
 &lt;p&gt;Vue-cli 项目（npm run serve 启动，8080 监听）&lt;/p&gt;
 &lt;p&gt;lang = javascipt&lt;/p&gt;
 &lt;p&gt;lang = scss&lt;/p&gt;
+&lt;p&gt;mixins 混入&lt;/p&gt;
 &lt;h3 id=&#34;王者图鉴&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#王者图鉴&#34;&gt;#&lt;/a&gt; 王者图鉴&lt;/h3&gt;
 &lt;p&gt;pinia&lt;/p&gt;
 &lt;p&gt;动态组件： &lt;code&gt;&amp;lt;component&amp;gt;+: is&lt;/code&gt;  实现&lt;/p&gt;
@@ -837,7 +1087,71 @@
 &lt;p&gt;lang = typescript&lt;/p&gt;
 &lt;p&gt;lang = less&lt;/p&gt;
 &lt;p&gt;通过依赖注入（provide+inject）解决 vue 多层组件逐级透传问题&lt;/p&gt;
- ]]></description>
+&lt;h3 id=&#34;注解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注解&#34;&gt;#&lt;/a&gt; 注解&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Vuex 和 Pinia 都是 Vue.js 的状态管理库，用于帮助开发者管理大型应用中的全局状态。它们的主要功能是提供一个集中存储和管理应用状态的机制，使得状态的更新和访问更加可预测和可维护。&lt;br /&gt;
+** API 风格 **&lt;br /&gt;
+Pinia 使用类似 Vue 组件的 API 来创建和使用 store，而 Vuex 使用一个全局对象来访问 store。&lt;br /&gt;
+在 Pinia 中，状态是响应式的，这意味着当状态发生变化时，组件会自动更新。在 Vuex 中，我们需要手动触发更新。&lt;br /&gt;
+Pinia 的 store 是模块化的，这意味着每个 store 可以包含自己的状态、操作和插件。在 Vuex 中，store 是全局的，这意味着所有的状态和操作都在同一个 store 中。&lt;br /&gt;
+** Vuex 的功能 **&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;集中存储状态：Vuex 提供了一个全局的 state 对象，所有组件都可以访问和修改这个状态。&lt;/li&gt;
+&lt;li&gt;严格的状态更新规则：状态只能通过提交 mutation 来更新，而 mutation 必须是同步的。&lt;/li&gt;
+&lt;li&gt;异步操作：通过 actions 来处理异步逻辑，然后提交 mutation 更新状态。&lt;/li&gt;
+&lt;li&gt;模块化：支持将状态管理拆分成多个模块，每个模块可以有自己的 state、getters、mutations 和 actions。&lt;/li&gt;
+&lt;li&gt;严格模式：可以开启严格模式来确保状态只通过 mutation 来更新，避免状态被意外修改。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;span&gt;t&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// store.js&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; Vuex &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;vuex&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;default&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Vuex&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Store&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token literal-property property&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token literal-property property&#34;&gt;count&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token literal-property property&#34;&gt;mutations&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;increment&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      state&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;count&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;decrement&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      state&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;count&lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token literal-property property&#34;&gt;actions&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;increment&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; commit &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token function&#34;&gt;commit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;increment&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;decrement&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; commit &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token function&#34;&gt;commit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;decrement&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 组件中使用&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; mapState&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; mapActions &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;vuex&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;default&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token literal-property property&#34;&gt;computed&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;mapState&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function-variable function&#34;&gt;count&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token parameter&#34;&gt;state&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; state&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;count&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token literal-property property&#34;&gt;methods&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;mapActions&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;increment&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;decrement&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;** Pinia 的功能 **&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;更简洁的 API：Pinia 提供了更简洁和直观的 API，使得状态管理更加简单易用。&lt;/li&gt;
+&lt;li&gt;组合式 API 支持：Pinia 完全基于 Vue 3 的组合式 API 设计，与 Vue 3 的特性（如 setup 函数）更加契合。&lt;/li&gt;
+&lt;li&gt;无严格模式：Pinia 不需要严格模式，因为它的设计使得状态更新更加自然和安全。&lt;/li&gt;
+&lt;li&gt;类型推断：Pinia 提供了更好的 TypeScript 支持，能够自动推断状态的类型，减少了类型注解的需要。&lt;/li&gt;
+&lt;li&gt;插件系统：支持插件系统，可以扩展 Pinia 的功能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;span&gt;t&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; defineStore &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;pinia&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; useCounterStore &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;defineStore&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token literal-property property&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;counter&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function-variable function&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token literal-property property&#34;&gt;count&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token literal-property property&#34;&gt;actions&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;increment&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;count&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;decrement&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;count&lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;** 区别 **&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;API 设计：Vuex 的 API 相对复杂，需要定义 state、getters、mutations、actions 等多个部分，而 Pinia 的 API 更为简洁，通过 defineStore 函数来定义状态管理。&lt;/li&gt;
+&lt;li&gt;与 Vue 的集成：Vuex 主要与 Vue 2 和 Vue 3 的选项式 API 集成，而 Pinia 完全基于 Vue 3 的组合式 API 设计，更适合 Vue 3 的开发方式。&lt;/li&gt;
+&lt;li&gt;类型支持：Pinia 提供了更好的 TypeScript 支持，能够自动推断类型，而 Vuex 在 TypeScript 支持方面需要更多的类型注解。&lt;/li&gt;
+&lt;li&gt;性能和易用性：Pinia 由于其简洁的设计和与 Vue 3 的紧密集成，通常被认为在性能和易用性上更优。&lt;/li&gt;
+&lt;li&gt;社区和生态：Vuex 是 Vue.js 的官方状态管理库，拥有较大的社区和丰富的生态支持，而 Pinia 是 Vue 3 推荐的状态管理库，逐渐在社区中获得更多的关注和支持。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;watch 和 watchEffect 是 Vue 3 中用于响应式地观察数据变化的两个 API，它们在使用场景和行为上有一些区别。&lt;br /&gt;
+** watch **&lt;br /&gt;
+watch API 与 vue2 选项式 API this.$watch (以及相应的 watch 选项) 完全等效。watch&lt;br /&gt;
+ 需要侦听特定的数据源，并在单独的回调函数中执行副作用。默认情况下，它也是惰性的 —— 即回调仅在侦听源发生变化时被调用。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;span&gt;t&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 侦听一个 getter&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; state &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;reactive&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; &lt;span class=&#34;token literal-property property&#34;&gt;count&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;watch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; state&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;count&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;count&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; prevCount&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;/* ... */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 直接侦听一个 ref&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; count &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ref&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;watch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;count&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;count&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; prevCount&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;/* ... */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 监听多个源&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;watch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;fooRef&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; barRef&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;foo&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; bar&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;prevFoo&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; prevBar&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;/* ... */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;** watchEffect **&lt;br /&gt;
+ 立即执行传入的一个函数，同时响应式追踪其依赖，并在其依赖变更时重新运行该函数。&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;span&gt;t&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; count &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ref&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;watchEffect&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;count&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;value&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// -&gt; logs 0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;setTimeout&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  count&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;value&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;// -&gt; logs 1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;区别&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;执行时机：watchEffect 是立即执行的，在页面加载时会主动执行一次，来收集依赖；而 watch 是惰性地执行副作用，它不会立即执行，但可以配置 immediate，使其主动触发&lt;/li&gt;
+&lt;li&gt;参数不同：watchEffect 只需要传递一个回调函数，不需要传递侦听的数据，它会在页面加载时主动执行一次，来收集依赖；而 watch 至少要有两个参数（第三个参数是配置项），第一个参数是侦听的数据，第二个参数是回调函数&lt;/li&gt;
+&lt;li&gt;结果不同：watchEffect 获取不到更改前的值；而 watch 可以同时获取更改前和更改后的值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;语法糖内的 defineProps 及 defineEmits、defineExpose&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;defineProps 和 defineEmits 都是只能在 &lt;script setup&gt; 中使用的编译器宏。他们不需要导入，且会随着 &lt;script setup&gt; 的处理过程一同被编译掉。&lt;/p&gt;
+&lt;p&gt;defineProps 接收与 props 选项相同的值，defineEmits 接收与 emits 选项相同的值，它们具备完整的类型推断并且在 script setup 中是直接可用的。&lt;/p&gt;
+&lt;p&gt;defineProps 或 defineEmits 要么使用运行时声明，要么使用类型声明。同时使用两种声明方式会导致编译报错&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;defineProps&lt;br /&gt;
+ 获取组件传值：父传子 defineProps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;span&gt;t&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;template&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;h1&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;swig￼&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;h1&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;div @click&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;clickThis&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1111&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;div&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;template&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;script setup lang&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;ts&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  defineProps&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 采用 ts 专有声明，无默认值&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token literal-property property&#34;&gt;msg&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; string&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    num&lt;span class=&#34;token operator&#34;&gt;?&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; number&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token comment&#34;&gt;// 采用 ts 专有声明，有默认值&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;interface&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Props&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        msg&lt;span class=&#34;token operator&#34;&gt;?&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; string&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        labels&lt;span class=&#34;token operator&#34;&gt;?&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; string&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; props &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;withDefaults&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;defineProps&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;Props&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token literal-property property&#34;&gt;msg&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;hello&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token function-variable function&#34;&gt;labels&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;one&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;two&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function&#34;&gt;defineProps&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 非 ts 专有声明&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token literal-property property&#34;&gt;msg&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; String&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token literal-property property&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token literal-property property&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;Number&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;default&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;script&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;style scoped lang&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;less&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;style&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;defineEmits&lt;br /&gt;
+defineEmits 子组件向父组件事件传递：子传父&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;span&gt;t&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;template&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;div @click&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;clickThis&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;点我&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;div&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;template&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;script setup lang&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;ts&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;/*ts 专有 */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; emit&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; defineEmits&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;e&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;click&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token literal-property property&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; number&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;/* 非 ts 专有 */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; emit&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;defineEmits&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;click&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;token function-variable function&#34;&gt;clickThis&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;emit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;click&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;script&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;style scoped lang&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;less&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;style&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;defineExpose&lt;br /&gt;
+ 子组件暴露属性和方法给父组件 defineExpose&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;span&gt;t&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;template&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;子组件helloword&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;vue&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;div&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;template&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;script setup lang&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;ts&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; ref &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;vue&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; count &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ref&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;123456&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;defineExpose&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  count&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;script&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;style scoped lang&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;less&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;style&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://kiyoumiii.github.io/2025/01/02/%E5%B0%86vite%E6%9E%84%E5%BB%BA%E7%9A%84vue3%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%88%B0githubpage%E6%95%99%E7%A8%8B/</guid>
@@ -925,7 +1239,7 @@
 &lt;h4 id=&#34;1-osi七层模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-osi七层模型&#34;&gt;#&lt;/a&gt; 1. OSI 七层模型&lt;/h4&gt;
 &lt;p&gt;ISO 为了更好的使网络应用更为普及，推出了 OSI 参考模型。&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.wzcyfynxcfta{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B.jpg&#34; class=&#34;wzcyfynxcfta&#34;&gt;
+    &lt;style&gt;.suosrypcowgj{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B.jpg&#34; class=&#34;suosrypcowgj&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;（1）应用层&lt;br /&gt;
  OSI 参考模型中最靠近用户的一层，是为计算机用户提供应用接口，也为用户直接提供各种网络服务。&lt;br /&gt;
@@ -953,7 +1267,7 @@
 &lt;h4 id=&#34;2-tcpip五层协议&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-tcpip五层协议&#34;&gt;#&lt;/a&gt; 2. TCP/IP 五层协议&lt;/h4&gt;
 &lt;p&gt;TCP/IP 五层协议和 OSI 的七层协议对应关系如下：&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.omxejeyjpoqp{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/TCP_IP_%E4%BA%94%E5%B1%82%E5%8D%8F%E8%AE%AE.jpg&#34; class=&#34;omxejeyjpoqp&#34;&gt;
+    &lt;style&gt;.infuahfhgwcy{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/TCP_IP_%E4%BA%94%E5%B1%82%E5%8D%8F%E8%AE%AE.jpg&#34; class=&#34;infuahfhgwcy&#34;&gt;
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;应用层 (application layer)：直接为应用进程提供服务。应用层协议定义的是应用进程间通讯和交互的规则，不同的应用有着不同的应用层协议，如 HTTP 协议（万维网服务）、FTP 协议（文件传输）、SMTP 协议（电子邮件）、DNS（域名查询）等。&lt;/li&gt;
@@ -971,15 +1285,15 @@
 &lt;p&gt;&lt;strong&gt;从上图中可以看出，TCP/IP 模型比 OSI 模型更加简洁，它把应用层 / 表示层 / 会话层全部整合为了应用层。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;在每一层都工作着不同的设备，比如我们常用的交换机就工作在数据链路层的，一般的路由器是工作在网络层的。&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.cwmomngtndio{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/03.jpg&#34; class=&#34;cwmomngtndio&#34;&gt;
+    &lt;style&gt;.mrugqkiqdrrh{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/03.jpg&#34; class=&#34;mrugqkiqdrrh&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;在每一层实现的协议也各不同，即每一层的服务也不同，下图列出了每层主要的传输协议：&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.sdbkpbdkmgbg{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/04.jpg&#34; class=&#34;sdbkpbdkmgbg&#34;&gt;
+    &lt;style&gt;.onbbyauixdyz{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/04.jpg&#34; class=&#34;onbbyauixdyz&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;同样，TCP/IP 五层协议的通信方式也是对等通信：&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.llapzndergym{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/05.jpg&#34; class=&#34;llapzndergym&#34;&gt;
+    &lt;style&gt;.hzgllfszricc{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/05.jpg&#34; class=&#34;hzgllfszricc&#34;&gt;
 &lt;/div&gt;
 &lt;h3 id=&#34;六-tcp与udp&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#六-tcp与udp&#34;&gt;#&lt;/a&gt; 六、TCP 与 UDP&lt;/h3&gt;
 &lt;h4 id=&#34;1-tcp-和-udp的概念及特点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-tcp-和-udp的概念及特点&#34;&gt;#&lt;/a&gt; 1. TCP 和 UDP 的概念及特点&lt;/h4&gt;
@@ -1026,7 +1340,7 @@ UDP 头部包含了以下几个数据：&lt;/p&gt;
  TCP 允许通信双方的应用程序在任何时候都能发送数据，因为 TCP 连接的两端都设有缓存，用来临时存放双向通信的数据。当然，TCP 可以立即发送一个数据段，也可以缓存一段时间以便一次发送更多的数据段（最大的数据段大小取决于 MSS）&lt;/p&gt;
 &lt;h4 id=&#34;2-tcp和udp的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-tcp和udp的区别&#34;&gt;#&lt;/a&gt; 2. TCP 和 UDP 的区别&lt;/h4&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.ssjzxbiuxsmj{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/06.jpg&#34; class=&#34;ssjzxbiuxsmj&#34;&gt;
+    &lt;style&gt;.rsgpiacvnwsm{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/06.jpg&#34; class=&#34;rsgpiacvnwsm&#34;&gt;
 &lt;/div&gt;
 &lt;h4 id=&#34;3-tcp和udp的使用场景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-tcp和udp的使用场景&#34;&gt;#&lt;/a&gt; 3. TCP 和 UDP 的使用场景&lt;/h4&gt;
 &lt;ul&gt;
@@ -1070,7 +1384,7 @@ TCP 在发送一个数据之后，就开启一个定时器，若是在这个时�
 &lt;li&gt;无论是在慢开始阶段还是在拥塞避免阶段，只要发送方判断网络出现拥塞，就把慢开始门限设置为出现拥塞时的发送窗口大小的一半。然后把拥塞窗口设置为 1，执行慢开始算法。如图所示:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.lxrfbvrswdep{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/07.jpg&#34; class=&#34;lxrfbvrswdep&#34;&gt;
+    &lt;style&gt;.dwjkdnbfhveu{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/07.jpg&#34; class=&#34;dwjkdnbfhveu&#34;&gt;
 &lt;/div&gt;
 其中，判断网络出现拥塞的根据就是没有收到确认，虽然没有收到确认可能是其他原因的分组丢失，但是因为无法判定，所以都当做拥塞来处理。
 &lt;p&gt;（3）快速重传&lt;/p&gt;
@@ -1084,7 +1398,7 @@ TCP 在发送一个数据之后，就开启一个定时器，若是在这个时�
 &lt;li&gt;考虑到如果网络出现拥塞的话就不会收到好几个重复的确认，所以发送方现在认为网络可能没有出现拥塞。所以此时不执行慢开始算法，而是将 cwnd 设置为 ssthresh 的大小，然后执行拥塞避免算法。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.leksplfjueub{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/08.jpg&#34; class=&#34;leksplfjueub&#34;&gt;
+    &lt;style&gt;.whsejhycmiur{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/08.jpg&#34; class=&#34;whsejhycmiur&#34;&gt;
 &lt;/div&gt;
 &lt;h4 id=&#34;7-tcp的流量控制机制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7-tcp的流量控制机制&#34;&gt;#&lt;/a&gt; 7. TCP 的流量控制机制&lt;/h4&gt;
 &lt;p&gt;一般来说，流量控制就是为了让发送方发送数据的速度不要太快，要让接收方来得及接收。TCP 采用大小可变的滑动窗口进行流量控制，窗口大小的单位是字节。这里说的窗口大小其实就是每次传输的数据大小。&lt;/p&gt;
@@ -1103,7 +1417,7 @@ TCP 协议在发送方维持了一个发送窗口，发送窗口以前的报文�
 &lt;h4 id=&#34;9-tcp的三次握手和四次挥手&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#9-tcp的三次握手和四次挥手&#34;&gt;#&lt;/a&gt; 9. TCP 的三次握手和四次挥手&lt;/h4&gt;
 &lt;p&gt;（1）三次握手&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.fnrlnuqttunv{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/09.jpg&#34; class=&#34;fnrlnuqttunv&#34;&gt;
+    &lt;style&gt;.bzfxzmolgbhv{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/09.jpg&#34; class=&#34;bzfxzmolgbhv&#34;&gt;
 &lt;/div&gt;
 （Three-way Handshake）其实就是指建立一个TCP连接时，需要客户端和服务器总共发送3个包。进行三次握手的主要作用就是为了确认双方的接收能力和发送能力是否正常、指定自己的初始化序列号为后面的可靠性传送做准备。实质上其实就是连接服务器指定端口，建立TCP连接，并同步连接双方的序列号和确认号，交换TCP窗口大小信息。
 &lt;p&gt;刚开始客户端处于 Closed 的状态，服务端处于 Listen 状态。&lt;/p&gt;
@@ -1134,7 +1448,7 @@ TCP 协议在发送方维持了一个发送窗口，发送窗口以前的报文�
 &lt;p&gt;TCP 三次握手的建立连接的过程就是相互确认初始序号的过程，告诉对方，什么样序号的报文段能够被正确接收。 第三次握手的作用是客户端对服务器端的初始序号的确认。如果只使用两次握手，那么服务器就没有办法知道自己的序号是否 已被确认。同时这样也是为了防止失效的请求报文段被服务器接收，而出现错误的情况。&lt;/p&gt;
 &lt;p&gt;（2）四次挥手&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.xvwugcqseirq{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/10.jpg&#34; class=&#34;xvwugcqseirq&#34;&gt;
+    &lt;style&gt;.oniythfmsznf{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/10.jpg&#34; class=&#34;oniythfmsznf&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;刚开始方都处于 ESTABLISHED 状态，假如是客户端先发起关闭请求。四次挥手的过程如下：&lt;/p&gt;
 &lt;ul&gt;
@@ -1483,7 +1797,7 @@ IE 对 URL 长度的限制是 2083 字节 (2K+35)。由于 IE 浏览器对 URL �
 管道（pipeline）网络传输是指：可以在同一个 TCP 连接里面，客户端可以发起多个请求，只要第一个请求发出去了，不必等其回来，就可以发第二个请求出去，可以减少整体的响应时间。但是服务器还是按照顺序回应请求。如果前面的回应特别慢，后面就会有许多请求排队等着。这称为队头堵塞。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.fcgbwrushnwf{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/http1%E9%95%BF%E7%9F%AD%E8%BF%9E%E6%8E%A5.jpg&#34; class=&#34;fcgbwrushnwf&#34;&gt;
+    &lt;style&gt;.eymyjtxtldok{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/http1%E9%95%BF%E7%9F%AD%E8%BF%9E%E6%8E%A5.jpg&#34; class=&#34;eymyjtxtldok&#34;&gt;
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;队头堵塞&lt;br /&gt;
@@ -1519,7 +1833,7 @@ IE 对 URL 长度的限制是 2083 字节 (2K+35)。由于 IE 浏览器对 URL �
 &lt;h4 id=&#34;1-什么是https协议&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-什么是https协议&#34;&gt;#&lt;/a&gt; 1. 什么是 HTTPS 协议？&lt;/h4&gt;
 &lt;p&gt;超文本传输安全协议（Hypertext Transfer Protocol Secure，简称：HTTPS）是一种通过计算机网络进行安全通信的传输协议。HTTPS 经由 HTTP 进行通信，利用 SSL/TLS 来加密数据包。HTTPS 的主要目的是提供对网站服务器的身份认证，保护交换数据的隐私与完整性。&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.ixdufgxekqrs{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/HTTP%E4%B8%8EHTTPS.jpg&#34; class=&#34;ixdufgxekqrs&#34;&gt;
+    &lt;style&gt;.onxwijlovyoz{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/HTTP%E4%B8%8EHTTPS.jpg&#34; class=&#34;onxwijlovyoz&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;HTTP 协议采用明文传输信息，存在信息窃听、信息篡改和信息劫持的风险，而协议 TLS/SSL 具有身份验证、信息加密和完整性校验的功能，可以避免此类问题发生。而协议 TLS/SSL 具有身份验证、信息加密和完整性校验的功能，可以避免此类问题发生。&lt;/p&gt;
 &lt;p&gt;安全层的主要职责就是对发起的 HTTP 请求的数据进行加密操作 和 对接收到的 HTTP 的内容进行解密操作。&lt;/p&gt;
@@ -1532,7 +1846,7 @@ IE 对 URL 长度的限制是 2083 字节 (2K+35)。由于 IE 浏览器对 URL �
 &lt;li&gt;非对称加密实现身份认证和秘钥协商&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.lnekxjovlusq{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/TLS%E5%8A%A0%E5%AF%86.jpg&#34; class=&#34;lnekxjovlusq&#34;&gt;
+    &lt;style&gt;.outovcisjeyz{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/TLS%E5%8A%A0%E5%AF%86.jpg&#34; class=&#34;outovcisjeyz&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;（1）散列函数 hash&lt;br /&gt;
  常见的散列函数有 MD5、SHA1、SHA256。该函数的特点是单向不可逆，对输入数据非常敏感，输出的长度固定，任何数据的修改都会改变散列函数的结果，可以用于防止信息篡改并验证数据的完整性。&lt;br /&gt;
@@ -1597,7 +1911,7 @@ HTTPS 的缺点如下：&lt;/li&gt;
 &lt;h3 id=&#34;三-http状态码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-http状态码&#34;&gt;#&lt;/a&gt; 三、HTTP 状态码&lt;/h3&gt;
 &lt;p&gt;状态码的类别：&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.puiotxklkcrq{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/%E7%8A%B6%E6%80%81%E7%A0%81%E7%B1%BB%E5%88%AB.jpg&#34; class=&#34;puiotxklkcrq&#34;&gt;
+    &lt;style&gt;.esbnctkqhdgd{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/31/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%B1%87%E6%80%BB-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/%E7%8A%B6%E6%80%81%E7%A0%81%E7%B1%BB%E5%88%AB.jpg&#34; class=&#34;esbnctkqhdgd&#34;&gt;
 &lt;/div&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -1775,7 +2089,7 @@ IIS 定义了许多不同的 403 错误，它们指明更为具体的错误原�
             <description><![CDATA[ &lt;p&gt;常用 git 命令一览表&lt;/p&gt;
 &lt;br&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.niwzyxmjamiu{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/28/%E8%B6%85%E7%BA%A7%E5%B8%B8%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9Bgit%E5%91%BD%E4%BB%A4/01.jpg&#34; class=&#34;niwzyxmjamiu&#34;&gt;
+    &lt;style&gt;.iobfvoevjfhf{}&lt;/style&gt;&lt;img data-src=&#34;/2024/12/28/%E8%B6%85%E7%BA%A7%E5%B8%B8%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9Bgit%E5%91%BD%E4%BB%A4/01.jpg&#34; class=&#34;iobfvoevjfhf&#34;&gt;
 &lt;/div&gt;
 &lt;br&gt;
 &lt;p&gt;自用的一些常备 git 命令：&lt;/p&gt;
@@ -1980,7 +2294,7 @@ React 的 next.js&lt;br /&gt;
 &lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;span&gt;l&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--save&lt;/span&gt; @ant-design/icons-vue&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;点击对应的图标，会自动将图标名称进行复制&lt;SnippetsOutlined /&gt;&lt;/p&gt;
 &lt;p&gt;例如关闭：&lt;/p&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;span&gt;l&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;CloseOutlined&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.gmpnvpmnblnb{}&lt;/style&gt;&lt;img data-src=&#34;/2024/09/17/Ant-design-vue%E4%B8%ADicon%E7%9A%84%E4%BD%BF%E7%94%A8/01.jpg&#34; class=&#34;gmpnvpmnblnb&#34;&gt;
+    &lt;style&gt;.xfksvrtztpyk{}&lt;/style&gt;&lt;img data-src=&#34;/2024/09/17/Ant-design-vue%E4%B8%ADicon%E7%9A%84%E4%BD%BF%E7%94%A8/01.jpg&#34; class=&#34;xfksvrtztpyk&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;但不能直接使用！！！需要将所有大写字母改为小写，删除掉 Oulined、TwoTone、Filled，并且中间 - 拼接 snippets&lt;/p&gt;
 &lt;p&gt;调整为 &lt;a-icon type=&#34;snippets&#34; /&gt; 就可以使用啦。&lt;/p&gt;
@@ -1989,16 +2303,16 @@ React 的 next.js&lt;br /&gt;
 亲测有效！&lt;br /&gt;
 复制格式：&lt;/p&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;span&gt;l&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;a-icon&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;close&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.drhjstkvtwaz{}&lt;/style&gt;&lt;img data-src=&#34;/2024/09/17/Ant-design-vue%E4%B8%ADicon%E7%9A%84%E4%BD%BF%E7%94%A8/02.jpg&#34; class=&#34;drhjstkvtwaz&#34;&gt;
+    &lt;style&gt;.ovufqceaeilb{}&lt;/style&gt;&lt;img data-src=&#34;/2024/09/17/Ant-design-vue%E4%B8%ADicon%E7%9A%84%E4%BD%BF%E7%94%A8/02.jpg&#34; class=&#34;ovufqceaeilb&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;进阶官方文档参考写法：&lt;/p&gt;
 &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;figcaption data-lang=&#34;javascript&#34;&gt;&lt;span&gt;t&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;template&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;snippets&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;outlined &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;style&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;&amp;#123;font-size:&#39;14px&#39;, color:&#39;#666&#39;&amp;#125;&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;template&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;script&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; SnippetsOutlined &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;@ant-design/icons-vue&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; defineComponent &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;vue&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;default&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;defineComponent&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token literal-property property&#34;&gt;components&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      SnippetsOutlined&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;script&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;或者我的写法：&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.mhxkuakupicm{}&lt;/style&gt;&lt;img data-src=&#34;/2024/09/17/Ant-design-vue%E4%B8%ADicon%E7%9A%84%E4%BD%BF%E7%94%A8/03.jpg&#34; class=&#34;mhxkuakupicm&#34;&gt;
+    &lt;style&gt;.cpuqbvisksiz{}&lt;/style&gt;&lt;img data-src=&#34;/2024/09/17/Ant-design-vue%E4%B8%ADicon%E7%9A%84%E4%BD%BF%E7%94%A8/03.jpg&#34; class=&#34;cpuqbvisksiz&#34;&gt;
 &lt;/div&gt;
 &lt;br&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.cqhpciwwtyna{}&lt;/style&gt;&lt;img data-src=&#34;/2024/09/17/Ant-design-vue%E4%B8%ADicon%E7%9A%84%E4%BD%BF%E7%94%A8/04.jpg&#34; class=&#34;cqhpciwwtyna&#34;&gt;
+    &lt;style&gt;.srsinqeeuyui{}&lt;/style&gt;&lt;img data-src=&#34;/2024/09/17/Ant-design-vue%E4%B8%ADicon%E7%9A%84%E4%BD%BF%E7%94%A8/04.jpg&#34; class=&#34;srsinqeeuyui&#34;&gt;
 &lt;/div&gt;
  ]]></description>
         </item>
@@ -2020,7 +2334,7 @@ React 的 next.js&lt;br /&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;figcaption data-lang=&#34;CSS&#34;&gt;&lt;span&gt;s&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token selector&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token property&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; flex&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;注意，设为 Flex 布局以后，子元素的 float、clear 和 vertical-align 属性将失效。&lt;/p&gt;
 &lt;p&gt;采用 Flex 布局的元素，称为 Flex 容器（flex container），简称” 容器”。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），简称” 项目”。&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.miltscewnrvh{}&lt;/style&gt;&lt;img data-src=&#34;/2024/09/17/flex%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80/01.png&#34; class=&#34;miltscewnrvh&#34;&gt;
+    &lt;style&gt;.oufelwoeivkm{}&lt;/style&gt;&lt;img data-src=&#34;/2024/09/17/flex%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80/01.png&#34; class=&#34;oufelwoeivkm&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做 main start，结束位置叫做 main end；交叉轴的开始位置叫做 cross start，结束位置叫做 cross end。&lt;/p&gt;
 &lt;p&gt;项目默认沿主轴排列。单个项目占据的主轴空间叫做 main size，占据的交叉轴空间叫做 cross size。&lt;/p&gt;
@@ -2081,7 +2395,7 @@ React 的 next.js&lt;br /&gt;
 &lt;p&gt;上述循环神经网络 “编码器－解码器” 模型中的各层如:&lt;/p&gt;
 &lt;br&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.xincglysbxvo{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/19/%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E8%B5%9B-seq2seq%E4%B8%8Etransformer/01.png&#34; class=&#34;xincglysbxvo&#34;&gt;
+    &lt;style&gt;.uptkqmqyoteu{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/19/%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E8%B5%9B-seq2seq%E4%B8%8Etransformer/01.png&#34; class=&#34;uptkqmqyoteu&#34;&gt;
 &lt;/div&gt;
 &lt;br&gt;
 &lt;p&gt;在每个时间步，解码器预测了输出词元的概率分布。 类似于语言模型，可以使用 softmax 来获得分布， 并通过计算交叉熵损失函数来进行优化。&lt;br /&gt;
@@ -2106,7 +2420,7 @@ tensor([[[ 1.,  1.,  1.,  1.],&lt;br /&gt;
 &lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;embed_size&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_hiddens&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_layers&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; dropout &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0.1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;batch_size&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_steps &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;64&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;lr&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_epochs&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; device &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0.005&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;300&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; d2l&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;try_gpu&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;train_iter&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; src_vocab&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; tgt_vocab &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; d2l&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;load_data_nmt&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;batch_size&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_steps&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;encoder &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Seq2SeqEncoder&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;src_vocab&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; embed_size&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_hiddens&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_layers&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                        dropout&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;decoder &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Seq2SeqDecoder&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;tgt_vocab&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; embed_size&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_hiddens&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_layers&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                        dropout&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;net &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; d2l&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;EncoderDecoder&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;encoder&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; decoder&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;train_seq2seq&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;net&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; train_iter&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; lr&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_epochs&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; tgt_vocab&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; device&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;为了采用一个接着一个词元的方式预测输出序列， 每个解码器当前时间步的输入都将来自于前一时间步的预测词元。 与训练类似，序列开始词元（“&lt;bos&gt;”） 在初始时间步被输入到解码器中。 该预测过程如 图所示， 当输出序列的预测遇到序列结束词元（“&lt;eos&gt;”）时，预测就结束了。&lt;/p&gt;
 &lt;br&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.stofhoopouvm{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/19/%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E8%B5%9B-seq2seq%E4%B8%8Etransformer/02.png&#34; class=&#34;stofhoopouvm&#34;&gt;
+    &lt;style&gt;.lndxpmoqbteg{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/19/%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E8%B5%9B-seq2seq%E4%B8%8Etransformer/02.png&#34; class=&#34;lndxpmoqbteg&#34;&gt;
 &lt;/div&gt;
 &lt;br&gt;
 &lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;predict_seq2seq&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;net&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; src_sentence&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; src_vocab&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; tgt_vocab&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_steps&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    device&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; save_attention_weights&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;序列到序列模型的预测&#34;&#34;&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;# 在预测时将 net 设置为评估模式&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    net&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;eval&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    src_tokens &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; src_vocab&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;src_sentence&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lower&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;split&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39; &#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        src_vocab&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;&amp;lt;eos&gt;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    enc_valid_len &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; torch&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;tensor&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;src_tokens&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; device&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;device&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    src_tokens &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; d2l&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;truncate_pad&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;src_tokens&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_steps&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; src_vocab&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;&amp;lt;pad&gt;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;# 添加批量轴&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    enc_X &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; torch&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;unsqueeze&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        torch&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;tensor&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;src_tokens&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; dtype&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;torch&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;long&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; device&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;device&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; dim&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    enc_outputs &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; net&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;encoder&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;enc_X&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; enc_valid_len&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    dec_state &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; net&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;decoder&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;init_state&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;enc_outputs&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; enc_valid_len&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;# 添加批量轴&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    dec_X &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; torch&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;unsqueeze&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;torch&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;tensor&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;tgt_vocab&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;&amp;lt;bos&gt;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; dtype&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;torch&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;long&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; device&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;device&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; dim&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    output_seq&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; attention_weight_seq &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; _ &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;num_steps&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        Y&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; dec_state &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; net&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;decoder&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;dec_X&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; dec_state&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# 我们使用具有预测最高可能性的词元，作为解码器在下一时间步的输入&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        dec_X &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Y&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;argmax&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;dim&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        pred &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; dec_X&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;squeeze&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;dim&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;torch&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;int32&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;item&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# 保存注意力权重（稍后讨论）&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; save_attention_weights&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            attention_weight_seq&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;append&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;net&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;decoder&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;attention_weights&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;# 一旦序列结束词元被预测，输出序列的生成就完成了&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; pred &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; tgt_vocab&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;&amp;lt;eos&gt;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;break&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        output_seq&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;append&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;pred&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39; &#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;join&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;tgt_vocab&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;to_tokens&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;output_seq&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; attention_weight_seq&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;BLUE 的计算代码如下&lt;/p&gt;
@@ -2200,17 +2514,17 @@ tensor([[[ 1.,  1.,  1.,  1.],&lt;br /&gt;
 &lt;p&gt;我们从构造这些门控开始。 图 9.1.1 描述了门控循环单元中的重置门和更新门的输入， 输入是由当前时间步的输入和前一时间步的隐状态给出。 两个门的输出是由使用 sigmoid 激活函数的两个全连接层给出。&lt;/p&gt;
 &lt;br&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.ujekkifersfc{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/19/%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E8%B5%9B-%E9%97%A8%E6%8E%A7%E5%BE%AA%E7%8E%AF%E5%8D%95%E5%85%83GRU/01.png&#34; class=&#34;ujekkifersfc&#34;&gt;
+    &lt;style&gt;.rcuxggetglua{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/19/%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E8%B5%9B-%E9%97%A8%E6%8E%A7%E5%BE%AA%E7%8E%AF%E5%8D%95%E5%85%83GRU/01.png&#34; class=&#34;rcuxggetglua&#34;&gt;
 &lt;/div&gt;
 &lt;br&gt;
 &lt;br&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.pvxlvkouwakq{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/19/%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E8%B5%9B-%E9%97%A8%E6%8E%A7%E5%BE%AA%E7%8E%AF%E5%8D%95%E5%85%83GRU/02.png&#34; class=&#34;pvxlvkouwakq&#34;&gt;
+    &lt;style&gt;.palxqnsdkcmc{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/19/%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E8%B5%9B-%E9%97%A8%E6%8E%A7%E5%BE%AA%E7%8E%AF%E5%8D%95%E5%85%83GRU/02.png&#34; class=&#34;palxqnsdkcmc&#34;&gt;
 &lt;/div&gt;
 &lt;br&gt;
 &lt;br&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.ejmbrezmnixx{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/19/%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E8%B5%9B-%E9%97%A8%E6%8E%A7%E5%BE%AA%E7%8E%AF%E5%8D%95%E5%85%83GRU/03.png&#34; class=&#34;ejmbrezmnixx&#34;&gt;
+    &lt;style&gt;.pyoomywrizxm{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/19/%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E8%B5%9B-%E9%97%A8%E6%8E%A7%E5%BE%AA%E7%8E%AF%E5%8D%95%E5%85%83GRU/03.png&#34; class=&#34;pyoomywrizxm&#34;&gt;
 &lt;/div&gt;
 &lt;br&gt;
 &lt;p&gt;总之，门控循环单元具有以下两个显著特征：&lt;/p&gt;
@@ -2283,15 +2597,15 @@ tensor([[[ 1.,  1.,  1.,  1.],&lt;br /&gt;
 &lt;li&gt;spacy：是一个强大的自然语言处理库，支持 70 + 语言的分词与训练&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.jrgawxfhijqg{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/spacy.png&#34; class=&#34;jrgawxfhijqg&#34;&gt;
+    &lt;style&gt;.meymsrahqmgv{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/spacy.png&#34; class=&#34;meymsrahqmgv&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;需要注意的是，使用命令！python -m spacy download en_core_web_trf 安装 en_core_web_sm 语言包非常的慢，经常会安装失败，因此可以离线安装 en_core_web_sm 语言包，从该路径下：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2V4cGxvc2lvbi9zcGFjeS1tb2RlbHMvcmVsZWFzZXM=&#34;&gt;https://github.com/explosion/spacy-models/releases&lt;/span&gt; 安装对应版本的 en_core_web_trf 语言包，可以看到我的 en_core_web_trf 3.7.3 版本的要求 spaCy &amp;gt;=3.7.2,❤️.8.0，刚好满足我的 3.7.5 的 spacy!：&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.ivnmjxbmyuaf{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/encore.png&#34; class=&#34;ivnmjxbmyuaf&#34;&gt;
+    &lt;style&gt;.kmbxyortheyw{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/encore.png&#34; class=&#34;kmbxyortheyw&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;将下载到本地的压缩包上传到你的魔搭平台上的  dataset 目录下，然后使用！pip install ../dataset/en_core_web_trf 安装英文语言包：&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.pbwivfjpluie{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/model.png&#34; class=&#34;pbwivfjpluie&#34;&gt;
+    &lt;style&gt;.vmnroonejmxh{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/model.png&#34; class=&#34;vmnroonejmxh&#34;&gt;
 &lt;/div&gt;
 &lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;span&gt;n&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;!pip install &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;U pip setuptools wheel &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;i https&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;pypi&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;tuna&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;tsinghua&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;edu&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;cn&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;simple&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;pip install &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;U &lt;span class=&#34;token string&#34;&gt;&#39;spacy[cuda12x,transformers,lookups]&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;i https&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;//&lt;/span&gt;pypi&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;tuna&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;tsinghua&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;edu&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;cn&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;simple&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;!pip install &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;dataset&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;en_core_web_trf&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3.7&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;.3&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;py3&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;none&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;any&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;whl&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;数据预处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据预处理&#34;&gt;#&lt;/a&gt; 数据预处理&lt;/h3&gt;
 &lt;p&gt;机器翻译任务的预处理是确保模型能够有效学习源语言到目标语言映射的关键步骤。预处理阶段通常包括多个步骤，旨在清理、标准化和转换数据，使之适合模型训练。以下是机器翻译任务预处理中常见的几个处理步骤：&lt;/p&gt;
@@ -2348,7 +2662,7 @@ tensor([[[ 1.,  1.,  1.,  1.],&lt;br /&gt;
 &lt;h3 id=&#34;模型训练&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#模型训练&#34;&gt;#&lt;/a&gt; 模型训练&lt;/h3&gt;
 &lt;p&gt;说到神经机器翻译就不得不提编码器 - 解码器模型，或编码器 - 解码器框架（EncoderDecoder Paradigm）。本质上，编码器 ­ 解码器模型是描述输入 ­ 输出之间关系的一种方式。编码器 ­ 解码器这个概念在日常生活中并不少见。&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.cxpmlluohvlf{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/e-d.png&#34; class=&#34;cxpmlluohvlf&#34;&gt;
+    &lt;style&gt;.kuxfijrymznc{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/e-d.png&#34; class=&#34;kuxfijrymznc&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;code&gt;给定一个中文句子“我/对/你/感到/满意”，编码器会将这句话编码成一个实数向量(0.2, −1, 6, 5, 0.7, −2)，这个向量就是源语言句子的“表示”结果。虽然有些不可思议，但是神经机器翻译模型把这个向量等同于输入序列。向量中的数字并没有实际的意义，然而解码器却能从中提取到源语言句子中所包含的信息。也有研究人员把向量的每一个维度看作是一个“特征”，这样源语言句子就被表示成多个“特征”的联合，而且这些特征可以被自动学习。有了这样的源语言句子的“表示”，解码器可以把这个实数向量作为输入，然后逐词生成目标语言句子“I am satisfied with you”。&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;在源语言句子的表示形式确定之后，需要设计相应的编码器和解码器结构。在当今主流的神经机器翻译系统中，编码器由词嵌入层和中间网络层组成：&lt;/p&gt;
@@ -2359,20 +2673,20 @@ tensor([[[ 1.,  1.,  1.,  1.],&lt;br /&gt;
 &lt;p&gt;解码器的结构基本上和编码器是一致的，在基于循环神经网络的翻译模型中，解码器只比编码器多了输出层，用于输出每个目标语言位置的单词生成概率，而在基于自注意力机制的翻译模型中，除了输出层，解码器还比编码器多一个编码 ­ 解码注意力子层，用于帮助模型更好地利用源语言信息。&lt;/p&gt;
 &lt;p&gt;通过循环网络对源语言文本进行编码，并生成目标语言翻译结果的过程十分简单。然而，它仅仅使用一个定长的向量 $$h_{m}$$ 编码整个源语言序列。这对于较短的源语言文本没有什么问题，但随着文本序列长度的逐渐加长，单一的一个向量 hm 可能不足以承载源语言序列当中的所有信息。&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.mhgtvyxqfnzd{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/RNN_BLUE.png&#34; class=&#34;mhgtvyxqfnzd&#34;&gt;
+    &lt;style&gt;.pkmzeycmfrru{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/RNN_BLUE.png&#34; class=&#34;pkmzeycmfrru&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;蓝色的线代表上述简单循环神经网络性能随源语言文本长度的变化趋势。当文本长度在 20 个单词以内时，单一向量能够承载源语言文本中的必要信息。随着文本序列的进一步增加，翻译性能的评价指标 BLEU 的值就开始出现明显地下降。因此，这就启发我们使用更加有效地机制从编码器向解码器传递源语言信息，这就是接下来要讲到的注意力机制。&lt;/p&gt;
 &lt;p&gt;引入注意力机制的循环机器翻译架构与基于简单循环网络的机器翻译模型大体结构相似，均采用循环神经网络作为编码器与解码器的实现。关键的不同点在于注意力机制的引入使得不再需要把原始文本中的所有必要信息压缩到一个向量当中。引入注意力机制的循环神经网络机器翻译架构如图所示:&lt;/p&gt;
 &lt;p&gt;1. 无注意力机制：&lt;br /&gt;
 &lt;br&gt;&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.moxwfhagugib{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/no_attention.png&#34; class=&#34;moxwfhagugib&#34;&gt;
+    &lt;style&gt;.kbbakryrnipx{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/no_attention.png&#34; class=&#34;kbbakryrnipx&#34;&gt;
 &lt;/div&gt;
 &lt;br&gt;
 2.引入注意力机制：
 &lt;br&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.tplxoucrspee{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/attention.png&#34; class=&#34;tplxoucrspee&#34;&gt;
+    &lt;style&gt;.eweynacjusoo{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%9F%BA%E4%BA%8E%E6%9C%AF%E8%AF%AD%E8%AF%8D%E5%85%B8%E5%B9%B2%E9%A2%84%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BF%BB%E8%AF%91%E6%8C%91%E6%88%98%E8%B5%9B/attention.png&#34; class=&#34;eweynacjusoo&#34;&gt;
 &lt;/div&gt;
 &lt;br&gt;
 &lt;p&gt;传统的 Seq2Seq 模型在解码阶段仅依赖于编码器产生的最后一个隐藏状态，这在处理长序列时效果不佳。注意力机制允许解码器在生成每个输出词时，关注编码器产生的所有中间状态，从而更好地利用源序列的信息。具体来说，给定源语言序列经过编码器输出的向量序列 $$h_{1},h_{2},h_{3},...,h_{m}$$，注意力机制旨在依据解码端翻译的需要，自适应地从这个向量序列中查找对应的信息。&lt;/p&gt;
@@ -2397,7 +2711,7 @@ tensor([[[ 1.,  1.,  1.,  1.],&lt;br /&gt;
 &lt;p&gt;但是在现代前端，除了 JS 还会涉及到许多别的编程语言，它们各有所长&lt;br /&gt;
 &lt;br&gt;&lt;/p&gt;
 &lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.uuqhrpfmwhvl{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%89%8D%E7%AB%AF%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/01.jpg&#34; class=&#34;uuqhrpfmwhvl&#34;&gt;
+    &lt;style&gt;.lkyefztnydox{}&lt;/style&gt;&lt;img data-src=&#34;/2024/08/17/%E5%89%8D%E7%AB%AF%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/01.jpg&#34; class=&#34;lkyefztnydox&#34;&gt;
 &lt;/div&gt;
 &lt;br&gt;
 &lt;p&gt;我们经常提到 ES6，它的全称是 ECMAScript 6 或是 ECMAScript 2015，它是一套文档，规范了脚本语言的设计，包括语法、数据类型、内置对象等等，而 JS 则是遵循这套规范的编程语言之一，ES 规范确保了无论在何处使用 JS，它的写法和行为都应该是一致的。&lt;/p&gt;
@@ -2521,159 +2835,6 @@ HTTP 虽然叫传输协议，但它实际上工作在 TCP/IP 协议的应用层�
 &lt;p&gt;以 bilibili 客户端为例，前端发起一个 grpc 请求至 gateway 网关，同时发送了多个自定义请求头，比如 x-bili-mid 表示当前用户，x-bili-trace-id 用于链路日志跟踪，x-bili-device-bin 表示设备信息等等。&lt;/p&gt;
 &lt;p&gt;在服务端的响应头中，Content-Type 表示这是一个 grpc 响应，x-bili-trace-id 用于日志跟踪等，可以看到，相比浏览器中的 HTTP，在客户端中的 HTTP 会更复杂，定制化的 HTTP 协议能带来更强大的功能。&lt;/p&gt;
  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://kiyoumiii.github.io/2024/08/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</guid>
-            <title>计算机网络-基础知识笔记（一）</title>
-            <link>https://kiyoumiii.github.io/2024/08/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</link>
-            <category term="计算机科学" scheme="https://kiyoumiii.github.io/categories/computer-science/" />
-            <category term="计算机网络" scheme="https://kiyoumiii.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" />
-            <pubDate>Fri, 02 Aug 2024 14:23:45 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;dns在现代前端中扮演着怎样的角色&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dns在现代前端中扮演着怎样的角色&#34;&gt;#&lt;/a&gt; DNS 在现代前端中扮演着怎样的角色&lt;/h2&gt;
-&lt;p&gt;DNS 的全称是域名系统（Domain Name System）&lt;br /&gt;
-它的主要功能就是将人们容易记住的域名转换成计算机能理解的 IP 地址，从而实现正确的网络连接，而执行这项转换任务的便是 DNS 服务器&lt;/p&gt;
-&lt;p&gt;DNS 服务器除了部署在互联网的各个角落，其实每一台终端设备都会内置本地 DNS 服务器&lt;br /&gt;
- DNS 查询时，会依次经过应用程序，比如浏览器的缓存、本地 hosts、本地 DNS 服务器、根服务器、顶级域名服务器、权威服务器，最后得到真正的 IP 地址&lt;/p&gt;
-&lt;p&gt;作为开发者，我们通常会从域名服务商购买顶级域名，同时服务商也会提供域名解析服务&lt;/p&gt;
-&lt;p&gt;配置 DNS records，最重要的便是 A 记录和 CNAME 记录，A 记录保存最终要返回的 IP 地址，而 CNAME 则是将子域名映射到另一个域名，可以指向相同主域名也可以是其他主域名&lt;/p&gt;
-&lt;p&gt;这种在 A 记录上直接填写固定 IP 地址的方式，只适用于简单的单机部署网站&lt;br /&gt;
-在大型应用中，应用服务器以分布式方式部署，IP 地址是动态变化的，因此，大型应用会采用动态解析 IP 地址的方式，将同一个域名，根据不同网络运营商、不同地区，解析到不同 IP 地址的服务器上。&lt;br /&gt;
-在真实世界中，这些服务器大概率并非最终的应用服务器，而是具备反向代理能力的负载均衡（LB）服务器、WEB 应用防火墙（WAF）等等。而真正的应用服务器 IP 地址是不会暴露于公网环境的。&lt;/p&gt;
-&lt;p&gt;现代 DNS 服务器除了具备基本的域名解析功能外，还会提供安全插件（DNSSEC）、DNS 分析、利用边缘网络加速解析、DDos 防护这些功能。它们都是为了更快、更安全的为用户提供服务&lt;/p&gt;
-&lt;p&gt;前端熟知的内容分发网络（CDN）与 DNS 有着密切关系，当不同地区的用户访问前端静态资源时，会从不同的 CDN 节点下载数据，这归功于 DNS 系统的 CNAME 记录，DNS 服务器会根据用户所在地区，返回不同的 CNAME 域名，我们通常称之为 CDN 加速域名&lt;/p&gt;
-&lt;p&gt;假设我们的图片资源托管在 img.alicdn.com 上，如何知道用户实际上会访问到哪台 CDN 服务器呢&lt;br /&gt;
-使用 nslookup 工具依次查询该域名的 CNAME 和 A 记录，最终我们会得到 CDN 服务器的 IP 地址，它的实际地理位置刚好就是用户所在地附近&lt;/p&gt;
-&lt;p&gt;真实世界中 DNS 解析并非一轮完成，它背后会经历多次反复查询，在没有任何缓存的情况下，它会非常慢，以至于显著影响到你的网站打开速度，因此，无论是 DNS 云服务商还是互联网上的基础设施，都会想尽办法加速 DNS 解析，诸如：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;使用高性能的 DNS 服务器&lt;/li&gt;
-&lt;li&gt;配置 DNS 缓存&lt;/li&gt;
-&lt;li&gt;增加 DNS 记录的缓存时间（TTL）等等&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;作为前端，我们也可以通过浏览器提供的 DNS 预取功能，来指定需要提前解析的域名，比如：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;通过在 HTML 中添加 dns-prefetch link 标签，可以让浏览器在解析完该标签后立即进行 DNS 查询，来提升用户后续访问该域名的速度。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;利用 DNS 查询原理，我们可以通过修改本地 hosts 的方式来给项目配置一个域名，而不是直接使用 localhost, 这能有效解决与服务端联调时，cookie 无法跨越传输的问题&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;另外，如果项目依赖中硬编码了线上域名，通过修改本地 DNS 记录，可以在不改变代码的情况下，将线上域名映射到本地或者联调环境，方便问题验证和多环节联调&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://kiyoumiii.github.io/2024/07/31/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/</guid>
-            <title>前端基础--浏览器是如何运作的</title>
-            <link>https://kiyoumiii.github.io/2024/07/31/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/</link>
-            <category term="计算机科学" scheme="https://kiyoumiii.github.io/categories/computer-science/" />
-            <category term="前端" scheme="https://kiyoumiii.github.io/tags/%E5%89%8D%E7%AB%AF/" />
-            <pubDate>Wed, 31 Jul 2024 20:01:34 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h2&gt;
-&lt;p&gt;在浏览网页时用户希望页面的内容能够快速加载且流畅交互。因此，开发者应力争实现这两个目标。&lt;br /&gt;
-理解浏览器的工作原理有助于开发者了解该如何提升性能和感知性能。&lt;/p&gt;
-&lt;p&gt;导致 Web 性能问题的原因主要有两种，一是网络延迟，二是大部分情况下的浏览器单线程执行。&lt;/p&gt;
-&lt;p&gt;保障页面快速加载的最大威胁是网络延迟。开发者的目标是使网站加载速度尽可能快，或者至少看起来加载速度很快，以便用户尽快获取所需信息。&lt;br /&gt;
-网络延迟是将字节传输到计算机的时间。Web 性能优化需要做的就是使页面尽可能快地加载完成。&lt;/p&gt;
-&lt;p&gt;大部分情况下，浏览器被认为是单线程的。也就是说，它们在执行一个任务之前会从头到尾完成一个任务，然后才会接受另一个任务。&lt;/p&gt;
-&lt;p&gt;为了实现流畅的交互，开发者的目标是确保网站的交互性能良好，从流畅的滚动到对触摸的响应。渲染时间非常关键，我们需要确保主线程能够完成交给它的所有工作，并且始终能够处理用户交互。&lt;/p&gt;
-&lt;p&gt;通过理解浏览器的单线程特性，并尽可能和适当地减少主线程的责任，可以提高网页性能，以确保渲染流畅，并且对交互的响应是即时的。&lt;/p&gt;
-&lt;h2 id=&#34;导航&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#导航&#34;&gt;#&lt;/a&gt; 导航&lt;/h2&gt;
-&lt;p&gt;导航是加载 web 页面的第一步。它发生在以下情形：用户通过在地址栏输入一个 URL、点击一个链接、提交表单或者是其他的行为。&lt;br /&gt;
-Web 性能优化的目标之一就是缩短导航完成所花费的时间，在理想情况下，它通常不会花费太多的时间，但是网络延迟和带宽会让它变久。&lt;/p&gt;
-&lt;h2 id=&#34;dns查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dns查询&#34;&gt;#&lt;/a&gt; DNS 查询&lt;/h2&gt;
-&lt;p&gt;对于一个 web 页面来说导航的第一步是要去寻找页面资源的位置。&lt;br /&gt;
-如果导航到 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9leGFtcGxlLmNvbQ==&#34;&gt;https://example.com&lt;/span&gt;，HTML 页面被定位到 IP 地址为 93.184.216.34 的服务器。如果以前没有访问过这个网站，就需要进行 DNS 查询。&lt;/p&gt;
-&lt;p&gt;浏览器向域名服务器发起 DNS 查询请求，最终得到一个 IP 地址。&lt;br /&gt;
-第一次请求之后，这个 IP 地址可能会被缓存一段时间，这样可以通过从缓存里面检索 IP 地址而不是再通过域名服务器进行查询来加速后续的请求。&lt;/p&gt;
-&lt;p&gt;每个主机名 (hostname) 在页面加载时通常只需要进行一次 DNS 查询。但是，对于页面指向的不同的主机名，则需要多次 DNS 查询。如果字体（font）、图像（image）、脚本（script）、广告（ads）和网站统计（metric）都有不同的主机名，则需要对每一个主机名进行 DNS 查询。&lt;br /&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.ushwealyahdw{}&lt;/style&gt;&lt;img data-src=&#34;/2024/07/31/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/01.jpg&#34; class=&#34;ushwealyahdw&#34;&gt;
-&lt;/div&gt;
-&lt;br&gt;
-但是对于移动网络，DNS 查询可能存在性能问题。当一个用户使用移动网络时，所有 DNS 查询必须从手机发送到基站，然后到达一个权威 DNS 服务器。手机、信号塔、域名服务器之间的距离会显著增加延迟。
-&lt;h2 id=&#34;tcp握手&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcp握手&#34;&gt;#&lt;/a&gt; TCP 握手&lt;/h2&gt;
-&lt;p&gt;一旦获取到服务器 IP 地址，浏览器就会通过 TCP “三次握手” 与服务器建立连接。&lt;br /&gt;
-这个机制的是用来让两端尝试进行通信 —— 在浏览器和服务器通过上层协议 HTTPS 发送数据之前，可以协商网络 TCP 套接字连接的一些参数。&lt;/p&gt;
-&lt;p&gt;TCP 的 “三次握手” 技术经常被称为 “SYN-SYN-ACK”—— 更确切的说是 SYN、SYN-ACK、ACK—— 因为通过 TCP 首先发送了三个消息进行协商，然后在两台电脑之间开始一个 TCP 会话。是的，这意味着当请求尚未发出的时候，终端与每台服务器之间还要来回多发送三条消息。&lt;/p&gt;
-&lt;h2 id=&#34;tls协商&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tls协商&#34;&gt;#&lt;/a&gt; TLS 协商&lt;/h2&gt;
-&lt;p&gt;对于通过 HTTPS 建立的安全连接，还需要另一次 &amp;quot;握手&amp;quot;。这种握手，或者说 TLS 协商，决定使用哪种密码对通信进行加密，验证服务器，并在开始实际数据传输前建立安全连接。这就需要在实际发送内容请求之前，再往返服务器五次。&lt;br /&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.rkwhrbxwrzpq{}&lt;/style&gt;&lt;img data-src=&#34;/2024/07/31/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/02.jpg&#34; class=&#34;rkwhrbxwrzpq&#34;&gt;
-&lt;/div&gt;
-&lt;br&gt;
-虽然建立安全连接的步骤增加了等待加载页面的时间，但是为了建立一个安全的连接而增加延迟是值得的，因为在浏览器和 web 服务器之间传输的数据不可以被第三方解密。
-&lt;p&gt;如此经过 8 次往返，浏览器终于可以发出请求。&lt;/p&gt;
-&lt;h3 id=&#34;响应&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#响应&#34;&gt;#&lt;/a&gt; 响应&lt;/h3&gt;
-&lt;p&gt;一旦我们建立了和 web 服务器的连接，浏览器就会代表用户发送一个初始的 HTTP GET 请求，对于网站来说，这个请求通常是一个 HTML 文件。一旦服务器收到请求，它将使用相关的响应头和 HTML 的内容进行回复。&lt;/p&gt;
-&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;span&gt;l&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token doctype&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span class=&#34;token doctype-tag&#34;&gt;doctype&lt;/span&gt; &lt;span class=&#34;token name&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;zh-CN&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;UTF-8&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;title&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;简单的页面&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;title&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;link&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;rel&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;stylesheet&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;styles.css&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;myscript.js&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token script&#34;&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;head&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;h1&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;heading&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;我的页面&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;h1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;含有&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;https://example.com/about&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;链接&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;的段落。&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;myimage.jpg&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;图像描述&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;anotherscript.js&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token script&#34;&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;初始请求的响应包含所接收数据的第一个字节。首字节时间（TTFB）是用户通过点击链接进行请求与收到第一个 HTML 数据包之间的时间。第一个内容分块通常是 14KB 的数据。&lt;/p&gt;
-&lt;p&gt;上面的示例中，这个请求肯定是小于 14KB 的，但是直到浏览器在解析阶段遇到链接时才会去请求链接的资源，下面有进行描述。&lt;/p&gt;
-&lt;h3 id=&#34;拥塞控制tcp慢启动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#拥塞控制tcp慢启动&#34;&gt;#&lt;/a&gt; 拥塞控制 / TCP 慢启动&lt;/h3&gt;
-&lt;p&gt;在传输过程中，TCP 包被分割成段。由于 TCP 保证了数据包的顺序，因此服务器在发送一定数量的分段后，必须从客户端接收一个 ACK 包的确认。&lt;/p&gt;
-&lt;p&gt;如果服务器在发送每个分段之后都等待 ACK，那么客户端将频繁地发送 ACK，并且可能会增加传输时间，即使在网络负载较低的情况下也是如此。&lt;/p&gt;
-&lt;p&gt;另一方面，一次发送过多的分段会导致在繁忙的网络中客户端无法接收分段并且长时间地只会持续发送 ACK，服务器必须不断重新发送分段的问题。&lt;/p&gt;
-&lt;p&gt;为了平衡传输分段的数量，TCP 慢启动算法用于逐渐增加传输数据量，直到确定最大网络带宽，并在网络负载较高时减少传输数据量。&lt;/p&gt;
-&lt;p&gt;传输段的数量由拥塞窗口（CWND）的值控制，该值可初始化为 1、2、4 或 10 MSS（以太网协议中的 MSS 为 1500 字节）。该值是发送的字节数，客户端收到后必须发送 ACK。&lt;/p&gt;
-&lt;p&gt;如果收到 ACK，那么 CWND 值将加倍，这样服务器下次就能发送更多的数据分段。相反，如果没有收到 ACK，那么 CWND 值将减半。因此，这种机制在发送过多分段和过少分段之间取得了平衡。&lt;/p&gt;
-&lt;h3 id=&#34;解析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解析&#34;&gt;#&lt;/a&gt; 解析&lt;/h3&gt;
-&lt;p&gt;一旦浏览器收到第一个数据分块，它就可以开始解析收到的信息。“解析” 是浏览器将通过网络接收的数据转换为 DOM 和 CSSOM 的步骤，通过渲染器在屏幕上将它们绘制成页面。&lt;/p&gt;
-&lt;p&gt;虽然 DOM 是浏览器标记的内部表示，但是它也被暴露出来，可以通过 JavaScript 中的各种 API 进行操作。&lt;/p&gt;
-&lt;p&gt;即使请求页面的 HTML 大于初始的 14KB 数据包，浏览器也将根据其拥有的数据开始解析并尝试渲染。这就是为什么在前 14KB 中包含浏览器开始渲染页面所需的所有内容，或者至少包含页面模板（第一次渲染所需的 CSS 和 HTML）对于 web 性能优化来说是重要的。但是在渲染到屏幕上面之前，HTML、CSS、JavaScript 必须被解析完成。&lt;/p&gt;
-&lt;h3 id=&#34;构建dom树&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#构建dom树&#34;&gt;#&lt;/a&gt; 构建 DOM 树&lt;/h3&gt;
-&lt;p&gt;我们在关键渲染路径这篇文章中描述了五个步骤。&lt;/p&gt;
-&lt;p&gt;第一步是处理 HTML 标记并构造 DOM 树。HTML 解析涉及到符号化和树的构造。HTML 标记包括开始和结束标记，以及属性名和值。如果文档格式良好，则解析它会简单而快速。解析器将标记化的输入解析到文档中，构建文档树。&lt;/p&gt;
-&lt;p&gt;DOM 树描述了文档的内容。&lt;html&gt; 元素是第一个标签也是文档树的根节点。树反映了不同标记之间的关系和层次结构。嵌套在其他标记中的标记是子节点。DOM 节点的数量越多，构建 DOM 树所需的时间就越长。&lt;br /&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.alabqzcvcufd{}&lt;/style&gt;&lt;img data-src=&#34;/2024/07/31/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/03.gif&#34; class=&#34;alabqzcvcufd&#34;&gt;
-&lt;/div&gt;
-&lt;br&gt;
-当解析器发现非阻塞资源，例如一张图片，浏览器会请求这些资源并且继续解析。当遇到一个 CSS 文件时，解析也可以继续进行，但是对于 
-《script》标签（特别是没有 async 或者 defer 属性的）会阻塞渲染并停止 HTML 的解析。尽管浏览器的预加载扫描器加速了这个过程，但过多的脚本仍然是一个重要的瓶颈。
-&lt;h3 id=&#34;预加载扫描器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#预加载扫描器&#34;&gt;#&lt;/a&gt; 预加载扫描器&lt;/h3&gt;
-&lt;p&gt;浏览器构建 DOM 树时，这个过程占用了主线程。同时，预加载扫描器会解析可用的内容并请求高优先级的资源，如 CSS、JavaScript 和 web 字体。多亏了预加载扫描器，我们不必等到解析器找到对外部资源的引用时才去请求。它将在后台检索资源，而当主 HTML 解析器解析到要请求的资源时，它们可能已经下载中了，或者已经被下载。预加载扫描器提供的优化减少了阻塞。&lt;/p&gt;
-&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;span&gt;l&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;link&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;rel&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;stylesheet&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;styles.css&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;myscript.js&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;async&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token script&#34;&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;myimage.jpg&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;图像描述&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;anotherscript.js&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;async&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token script&#34;&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;在这个例子中，当主线程在解析 HTML 和 CSS 时，预加载扫描器将找到脚本和图像，并开始下载它们。为了确保脚本不会阻塞进程，当 JavaScript 解析和执行顺序不重要时，可以添加 async 属性或 defer 属性。&lt;/p&gt;
-&lt;p&gt;等待获取 CSS 不会阻塞 HTML 的解析或者下载，但是它确实会阻塞 JavaScript，因为 JavaScript 经常用于查询元素的 CSS 属性。&lt;/p&gt;
-&lt;h3 id=&#34;构建cssom树&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#构建cssom树&#34;&gt;#&lt;/a&gt; 构建 CSSOM 树&lt;/h3&gt;
-&lt;p&gt;第二步是处理 CSS 并构建 CSSOM 树。CSS 对象模型和 DOM 是相似的。DOM 和 CSSOM 是两棵树。它们是独立的数据结构。浏览器将 CSS 规则转换为可以理解和使用的样式映射。浏览器遍历 CSS 中的每个规则集，根据 CSS 选择器创建具有父、子和兄弟关系的节点树。&lt;/p&gt;
-&lt;p&gt;与 HTML 类似，浏览器需要将接收到的 CSS 规则转换为可处理的格式。因此，它重复了 HTML 到对象的过程，但这次是针对 CSS。&lt;/p&gt;
-&lt;p&gt;CSSOM 树包括来自用户代理样式表的样式。浏览器从适用于节点的最通用规则开始，并通过应用更具体的规则递归地优化计算的样式。换句话说，它级联属性值。&lt;/p&gt;
-&lt;p&gt;构建 CSSOM 非常快，并且在当前的开发工具中没有以独特的颜色显示。相反，开发人员工具中的 “重新计算样式” 显示解析 CSS、构建 CSSOM 树和递归计算计算样式所需的总时间。在 web 性能优化方面，它是可轻易实现的，因为创建 CSSOM 的总时间通常小于一次 DNS 查询所需的时间。&lt;/p&gt;
-&lt;h3 id=&#34;其他过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#其他过程&#34;&gt;#&lt;/a&gt; 其他过程&lt;/h3&gt;
-&lt;h3 id=&#34;javascript编译&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#javascript编译&#34;&gt;#&lt;/a&gt; JavaScript 编译&lt;/h3&gt;
-&lt;p&gt;在解析 CSS 和创建 CSSOM 的同时，包括 JavaScript 文件在内的其他资源也在下载（这要归功于预加载扫描器）。JavaScript 会被解析、编译和解释。脚本被解析为抽象语法树。有些浏览器引擎会将抽象语法树输入编译器，输出字节码。这就是所谓的 JavaScript 编译。大部分代码都是在主线程上解释的，但也有例外，例如在 web worker 中运行的代码。&lt;/p&gt;
-&lt;h3 id=&#34;构建无障碍树&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#构建无障碍树&#34;&gt;#&lt;/a&gt; 构建无障碍树&lt;/h3&gt;
-&lt;p&gt;浏览器还构建辅助设备用于分析和解释内容的无障碍树。无障碍对象模型（AOM）类似于 DOM 的语义版本。当 DOM 更新时，浏览器会更新辅助功能树。辅助技术本身无法修改无障碍树。&lt;/p&gt;
-&lt;p&gt;在构建 AOM 之前，屏幕阅读器无法访问内容。&lt;/p&gt;
-&lt;h2 id=&#34;渲染&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#渲染&#34;&gt;#&lt;/a&gt; 渲染&lt;/h2&gt;
-&lt;p&gt;渲染步骤包括样式、布局、绘制，在某些情况下还包括合成。在解析步骤中创建的 CSSOM 树和 DOM 树组合成一个渲染树，然后用于计算每个可见元素的布局，然后将其绘制到屏幕上。在某些情况下，可以将内容提升到它们自己的层并进行合成，通过在 GPU 而不是 CPU 上绘制屏幕的一部分来提高性能，从而释放主线程。&lt;/p&gt;
-&lt;h3 id=&#34;样式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#样式&#34;&gt;#&lt;/a&gt; 样式&lt;/h3&gt;
-&lt;p&gt;关键呈现路径的第三步是将 DOM 和 CSSOM 组合成渲染树。计算样式树或渲染树的构建从 DOM 树的根开始，遍历每个可见节点。&lt;/p&gt;
-&lt;p&gt;不会被显示的元素，如 &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;  元素及其子元素，以及任何带有 display: none 的节点，如用户代理样式表中的 script {display: none;}，都不会包含在渲染树中，因为它们不会出现在渲染输出中。应用了 visibility: hidden 的节点会包含在渲染树中，因为它们会占用空间。由于我们没有给出任何指令来覆盖用户代理默认值，因此上述代码示例中的 script 节点不会包含在渲染树中。&lt;/p&gt;
-&lt;p&gt;每个可见节点都应用了 CSSOM 规则。渲染树包含所有可见节点的内容和计算样式，将所有相关样式与 DOM 树中的每个可见节点匹配起来，并根据 CSS 级联，确定每个节点的计算样式。&lt;/p&gt;
-&lt;h3 id=&#34;布局&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#布局&#34;&gt;#&lt;/a&gt; 布局&lt;/h3&gt;
-&lt;p&gt;第四步是在渲染树上运行布局以计算每个节点的几何体。布局是确定呈现树中所有节点的尺寸和位置，以及确定页面上每个对象的大小和位置的过程。重排是后续过程中对页面的任意部分或整个文档的大小和位置的重新计算。&lt;/p&gt;
-&lt;p&gt;渲染树构建完毕后，浏览器就开始布局。渲染树标识了哪些节点会显示（即使不可见）及其计算样式，但不标识每个节点的尺寸或位置。为了确定每个对象的确切大小和位置，浏览器会从渲染树的根开始遍历。&lt;/p&gt;
-&lt;p&gt;在网页上，大多数东西都是一个盒子。不同的设备和不同的桌面设置意味着无限数量的不同视区大小。在此阶段，根据视口大小，浏览器将确定屏幕上所有盒子的大小。以视口大小为基础，布局通常从 body 开始，设置所有 body 后代的大小，同时给不知道其尺寸的替换元素（例如图像）提供占位符空间，空间大小以相应元素盒模型的属性为准。&lt;/p&gt;
-&lt;p&gt;第一次确定每个节点的大小和位置称为&lt;strong&gt;布局&lt;/strong&gt;。随后对节点大小和位置的重新计算称为&lt;strong&gt;重排&lt;/strong&gt;。在我们的示例中，假设初始布局发生在返回图像之前。由于我们没有声明图像的尺寸，因此一旦知道图像的尺寸，就会出现重排。&lt;/p&gt;
-&lt;h3 id=&#34;绘制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#绘制&#34;&gt;#&lt;/a&gt; 绘制&lt;/h3&gt;
-&lt;p&gt;关键渲染路径中的最后一步是将各个节点绘制到屏幕上，其中第一次的绘制被称为&lt;strong&gt;首次有意义的绘制&lt;/strong&gt;。在绘制或光栅化阶段，浏览器将在布局阶段计算的每个盒子转换为屏幕上的实际像素。绘制涉及将元素的每个可见部分绘制到屏幕上，包括文本、颜色、边框、阴影以及按钮和图像等替换元素。浏览器需要以超快的速度执行这个过程。&lt;/p&gt;
-&lt;p&gt;为了确保平滑滚动和动画效果，包括计算样式、回流和绘制等占用主线程的所有操作，必须在不超过 16.67 毫秒的时间内完成。在 2048 x 1536 分辨率下，iPad 需要将超过 314.5 万个像素绘制到屏幕上。这是非常多的像素，必须要非常快速地绘制出来。为了确保重绘能够比初始绘制更快地完成，绘制到屏幕的操作通常被分解成几个图层。如果发生这种情况，浏览器则需要进行合成。&lt;/p&gt;
-&lt;p&gt;绘制可以将布局树中的元素分解为多个层。将内容提升到 GPU 上的层（而不是 CPU 上的主线程）可以提高绘制和重新绘制性能。有一些特定的属性和元素可以实例化一个层，包括  &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt;  和  &lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt; ，任何 CSS 属性为 opacity 、3D transform、will-change 的元素，还有一些其他元素。这些节点将与子节点一起绘制到它们自己的层上，除非子节点由于上述一个（或多个）原因需要自己的层。&lt;/p&gt;
-&lt;p&gt;分层确实可以提高性能，但在内存管理方面成本较高，因此不应作为 Web 性能优化策略的过度使用。&lt;/p&gt;
-&lt;h2 id=&#34;交互&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#交互&#34;&gt;#&lt;/a&gt; 交互&lt;/h2&gt;
-&lt;p&gt;一旦主线程绘制页面完成，你会认为我们已经 “准备好了”，但事实并非如此。如果加载包括正确延迟加载的 JavaScript，并且仅在 onload 事件触发后执行，那么主线程可能会忙于执行脚本，无法用于滚动、触摸和其他交互操作。&lt;/p&gt;
-&lt;p&gt;** 可交互时间（TTI）** 是测量从第一个请求导致 DNS 查询和 SSL 连接到页面可交互时所用的时间 —— 可交互是在首次内容绘制之后页面在 50ms 内响应用户的交互。如果主线程正在解析、编译和执行 JavaScript，则无法及时（小于 50ms）响应用户交互。&lt;/p&gt;
-&lt;p&gt;在我们的示例中，可能图像加载很快，但 anotherscript.js 文件的大小可能是 2MB，而且用户的网络连接很慢。在这种情况下，用户可以非常快地看到页面，但是在下载、解析和执行脚本之前，就无法滚动。这不是一个好的用户体验。避免占用主线程，如下面的网页测试示例所示：&lt;br /&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;div align=&#34;center&#34;&gt;
-    &lt;style&gt;.hrqpypofdkgn{}&lt;/style&gt;&lt;img data-src=&#34;/2024/07/31/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/04.png&#34; class=&#34;hrqpypofdkgn&#34;&gt;
-&lt;/div&gt;
-&lt;br&gt;
-在本例中，DOM 内容加载过程花费了超过 1.5 秒的时间，主线程在这段时间内完全被占用，对单击事件或屏幕点击没有响应。 ]]></description>
         </item>
     </channel>
 </rss>
